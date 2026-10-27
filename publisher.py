@@ -18,6 +18,8 @@ from zoneinfo import ZoneInfo
 
 import requests
 
+from card import card_from_url
+
 TZ = ZoneInfo("Europe/Berlin")
 CHANNEL_URL = "https://t.me/Angebote3"
 ASIN_RE = re.compile(r"/(?:dp|gp/product|gp/aw/d)/([A-Z0-9]{10})(?:[/?]|$)", re.I)
@@ -131,9 +133,14 @@ def next_deal(deals: list[dict], state: dict) -> tuple[str, dict, str] | None:
     return None
 
 
-def send_photo(token: str, chat: str, photo: str, text: str) -> int:
-    response = requests.post(f"https://api.telegram.org/bot{token}/sendPhoto",
-                             data={"chat_id": chat, "photo": photo, "caption": text}, timeout=30)
+def send_photo(token: str, chat: str, photo: str | bytes, text: str) -> int:
+    """photo is either a URL or the JPEG bytes of the designed card."""
+    data = {"chat_id": chat, "caption": text}
+    url = f"https://api.telegram.org/bot{token}/sendPhoto"
+    if isinstance(photo, bytes):
+        response = requests.post(url, data=data, files={"photo": ("deal.jpg", photo, "image/jpeg")}, timeout=30)
+    else:
+        response = requests.post(url, data={**data, "photo": photo}, timeout=30)
     payload = response.json()
     if not payload.get("ok"):
         raise PermissionError(payload.get("description", f"HTTP {response.status_code}"))
@@ -149,12 +156,17 @@ def post_one(deals_path: Path, state_path: Path, slot_label: str, token: str, ch
         print("لا يوجد عرض جديد في القائمة")
         return "queue_empty"
     key, deal, text = picked
+    photo: str | bytes = image_for(deal)
+    try:
+        photo = card_from_url(photo, fmt_price(deal["price_now"]), fmt_price(deal["price_before"]))
+    except Exception as error:
+        print(f"تعذر تصميم الصورة، ستُرسل صورة المنتج كما هي: {error}")
     # Reserve before sending: a timeout may still mean Telegram published it.
     state["slots"][slot_label] = key
     state["posted"][key] = {"slot": slot_label, "status": "pending"}
     save_state(state_path, state)
     try:
-        message_id = send_photo(token, chat, image_for(deal), text)
+        message_id = send_photo(token, chat, photo, text)
     except PermissionError as error:
         # Telegram answered with a clear refusal: nothing was posted.
         del state["slots"][slot_label]
