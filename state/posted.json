@@ -9,10 +9,16 @@
    "message_id": 166815,
    "slot": "2026-10-27T01:29-test",
    "status": "sent"
+  },
+  "B0BYDMZ3LT": {
+   "message_id": 166817,
+   "slot": "2026-10-27T10:00",
+   "status": "sent"
   }
  },
  "slots": {
   "2026-10-27T01:29-test": "B09FGN6HP9",
-  "2026-10-27T09:15": "B011KE2QLK"
+  "2026-10-27T09:15": "B011KE2QLK",
+  "2026-10-27T10:00": "B0BYDMZ3LT"
  }
 }
