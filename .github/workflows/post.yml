@@ -2,8 +2,9 @@ name: Post deals
 
 on:
   schedule:
-    # Every 5 minutes, 06:00-22:59 UTC (covers 09:00-23:30 Berlin in summer and winter).
-    - cron: "2-59/5 6-22 * * *"
+    # GitHub delays cron runs a lot, so each run stays alive and checks every 30 seconds.
+    # A new run only waits in the queue while the previous one is still working.
+    - cron: "*/20 6-22 * * *"
   workflow_dispatch:
     inputs:
       mode:
@@ -22,7 +23,7 @@ concurrency:
 jobs:
   post:
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 350
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -33,10 +34,23 @@ jobs:
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ vars.TELEGRAM_CHAT_ID }}
-        run: python publisher.py "${{ inputs.mode || 'tick' }}"
-      - name: Save state
+          MODE: ${{ inputs.mode || 'tick' }}
         run: |
           git config user.name "angebote3-bot"
           git config user.email "angebote3-bot@users.noreply.github.com"
-          git add state/posted.json
-          git diff --cached --quiet || { git commit -q -m "Update posted state"; git pull -q --rebase && git push -q; }
+          save_state() {
+            git add state/posted.json
+            git diff --cached --quiet || { git commit -q -m "Update posted state"; git pull -q --rebase && git push -q; }
+          }
+          if [ "$MODE" != "tick" ]; then
+            python publisher.py "$MODE"; status=$?; save_state; exit $status
+          fi
+          end=$((SECONDS + 20400))  # about 5h40m, under the 6h job limit
+          while [ $SECONDS -lt $end ]; do
+            hm=$(TZ=Europe/Berlin date +%H%M)
+            if [ "$hm" -gt 2331 ] || [ "$hm" -lt 0850 ]; then echo "خارج ساعات النشر"; break; fi
+            git pull -q --rebase || true
+            python publisher.py tick | grep -v "ليس موعد نشر الآن" || true
+            save_state
+            sleep 30
+          done
