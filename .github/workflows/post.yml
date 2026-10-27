@@ -1,0 +1,42 @@
+name: Post deals
+
+on:
+  schedule:
+    # Every 5 minutes, 06:00-22:59 UTC (covers 09:00-23:30 Berlin in summer and winter).
+    - cron: "2-59/5 6-22 * * *"
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "tick = follow the schedule, now = post the next deal right away"
+        default: tick
+        type: choice
+        options: [tick, now]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: post-deals
+  cancel-in-progress: false
+
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -q requests tzdata
+      - name: Post
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ vars.TELEGRAM_CHAT_ID }}
+        run: python publisher.py "${{ inputs.mode || 'tick' }}"
+      - name: Save state
+        run: |
+          git config user.name "angebote3-bot"
+          git config user.email "angebote3-bot@users.noreply.github.com"
+          git add state/posted.json
+          git diff --cached --quiet || { git commit -q -m "Update posted state"; git pull -q --rebase && git push -q; }
