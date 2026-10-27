@@ -24,20 +24,23 @@ def centered(draw: ImageDraw.ImageDraw, y: int, text: str, fnt, fill) -> tuple[i
     return draw.textbbox((x, y), text, font=fnt)
 
 
-def build_card(product: Image.Image, price_now: str, price_before: str) -> bytes:
-    now, before = Decimal(price_now), Decimal(price_before)
-    percent = round((1 - now / before) * 100)
+def build_card(product: Image.Image, price_now: str, price_before: str | None) -> bytes:
+    now = Decimal(price_now)
     card = Image.new("RGB", (W, H), WHITE)
     product = product.convert("RGBA")
     product.thumbnail((PANEL_X - 60, H - 80))
     card.paste(product, ((PANEL_X - product.width) // 2, (H - product.height) // 2), product)
     draw = ImageDraw.Draw(card)
     draw.rectangle([PANEL_X, 0, W, H], fill=RED)
-    centered(draw, 105, f"-{percent}%", font(118), WHITE)
-    centered(draw, 285, f"{now:.2f} €", font(76), WHITE)
-    box = centered(draw, 405, f"{before:.2f} €", font(46, bold=False), PINK)
-    mid = (box[1] + box[3]) // 2
-    draw.line([box[0] - 6, mid, box[2] + 6, mid], fill=PINK, width=4)
+    if price_before:
+        before = Decimal(price_before)
+        centered(draw, 105, f"-{round((1 - now / before) * 100)}%", font(118), WHITE)
+        centered(draw, 285, f"{now:.2f} €", font(76), WHITE)
+        box = centered(draw, 405, f"{before:.2f} €", font(46, bold=False), PINK)
+        mid = (box[1] + box[3]) // 2
+        draw.line([box[0] - 6, mid, box[2] + 6, mid], fill=PINK, width=4)
+    else:
+        centered(draw, 250, f"{now:.2f} €", font(96), WHITE)
     centered(draw, 568, "Tägliche Angebote", font(38), WHITE)
     centered(draw, 628, "t.me/Angebote3", font(28, bold=False), PINK)
     out = io.BytesIO()
@@ -45,7 +48,7 @@ def build_card(product: Image.Image, price_now: str, price_before: str) -> bytes
     return out.getvalue()
 
 
-def card_from_url(image_url: str, price_now: str, price_before: str) -> bytes:
+def card_from_url(image_url: str, price_now: str, price_before: str | None) -> bytes:
     response = requests.get(image_url, timeout=30, headers={"User-Agent": "Mozilla/5.0"})
     response.raise_for_status()
     return build_card(Image.open(io.BytesIO(response.content)), price_now, price_before)

@@ -76,13 +76,15 @@ def caption(deal: dict) -> str:
     link = str(deal.get("link", "")).strip()
     if not title or "\n" in title or not link.startswith("https://"):
         raise ValueError("العنوان أو الرابط ناقص")
-    now, before = fmt_price(deal["price_now"]), fmt_price(deal["price_before"])
-    if Decimal(now) >= Decimal(before):
+    now = fmt_price(deal["price_now"])
+    before = fmt_price(deal["price_before"]) if deal.get("price_before") else None
+    if before and Decimal(now) >= Decimal(before):
         raise ValueError("السعر الحالي ليس أقل من السعر السابق")
+    price_line = f"▪ بسعر {now}€ بدل {before}€" if before else f"▪ بسعر {now}€"
     text = (
         "🔺عروض يومية || Tägliche Angebote\n\n"
         f"▪ {title}\n\n"
-        f"▪ بسعر {now}€ بدل {before}€\n\n"
+        f"{price_line}\n\n"
         f"{link}\n\n"
         "▪ رابط الانضمام إلى القناة 🔗📲📣\n\n"
         f"{CHANNEL_URL}"
@@ -158,7 +160,8 @@ def post_one(deals_path: Path, state_path: Path, slot_label: str, token: str, ch
     key, deal, text = picked
     photo: str | bytes = image_for(deal)
     try:
-        photo = card_from_url(photo, fmt_price(deal["price_now"]), fmt_price(deal["price_before"]))
+        photo = card_from_url(photo, fmt_price(deal["price_now"]),
+                              fmt_price(deal["price_before"]) if deal.get("price_before") else None)
     except Exception as error:
         print(f"تعذر تصميم الصورة، ستُرسل صورة المنتج كما هي: {error}")
     # Reserve before sending: a timeout may still mean Telegram published it.
