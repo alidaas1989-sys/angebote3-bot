@@ -175,7 +175,7 @@ def post_one(deals_path: Path, state_path: Path, slot_label: str, token: str, ch
 
 def main() -> int:
     parser = argparse.ArgumentParser()
-    parser.add_argument("command", choices=["tick", "now", "preview", "schedule"])
+    parser.add_argument("command", choices=["tick", "now", "test", "preview", "schedule"])
     parser.add_argument("--deals", default="deals.jsonl")
     parser.add_argument("--state", default="state/posted.json")
     args = parser.parse_args()
@@ -194,6 +194,8 @@ def main() -> int:
             print("ليس موعد نشر الآن")
             return 0
         label = slot.strftime("%Y-%m-%dT%H:%M")
+    elif args.command == "test":
+        label = now.strftime("%Y-%m-%dT%H:%M") + "-test"
     else:
         if not in_posting_hours(now):
             print("خارج ساعات النشر (09:00 إلى 23:30 بتوقيت برلين)")

@@ -7,10 +7,10 @@ on:
   workflow_dispatch:
     inputs:
       mode:
-        description: "tick = follow the schedule, now = post the next deal right away"
+        description: "tick = follow the schedule, now = post the next deal now (09:00-23:30 only), test = post the next deal now at any hour"
         default: tick
         type: choice
-        options: [tick, now]
+        options: [tick, now, test]
 
 permissions:
   contents: write
