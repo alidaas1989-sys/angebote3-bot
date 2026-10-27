@@ -158,7 +158,7 @@ def post_one(deals_path: Path, state_path: Path, slot_label: str, token: str, ch
     except PermissionError as error:
         # Telegram answered with a clear refusal: nothing was posted.
         del state["slots"][slot_label]
-        state["posted"][key] = {"slot": slot_label, "status": "failed", "error": str(error)[:200]}
+        del state["posted"][key]
         save_state(state_path, state)
         print(f"رفض تلغرام العرض {key}: {error}")
         return "failed"
@@ -205,9 +205,12 @@ def main() -> int:
     if not token:
         print("TELEGRAM_BOT_TOKEN غير موجود")
         return 1
+    if not re.fullmatch(r"\d{6,12}:[A-Za-z0-9_-]{30,}", token):
+        print("TELEGRAM_BOT_TOKEN بصيغة غير صحيحة")
+        return 1
     chat = os.environ.get("TELEGRAM_CHAT_ID", "").strip() or "@Angebote3"
-    post_one(Path(args.deals), Path(args.state), label, token, chat)
-    return 0
+    result = post_one(Path(args.deals), Path(args.state), label, token, chat)
+    return 1 if result == "failed" else 0
 
 
 if __name__ == "__main__":
