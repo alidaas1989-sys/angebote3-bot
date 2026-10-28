@@ -6,7 +6,7 @@ from decimal import Decimal
 from pathlib import Path
 
 import requests
-from PIL import Image, ImageDraw, ImageFont
+from PIL import Image, ImageDraw, ImageFilter, ImageFont
 
 W, H, PANEL_X = 1280, 720, 768
 RED, WHITE, PINK = (196, 40, 40), (255, 255, 255), (245, 200, 200)
@@ -24,11 +24,13 @@ def centered(draw: ImageDraw.ImageDraw, y: int, text: str, fnt, fill) -> tuple[i
     return draw.textbbox((x, y), text, font=fnt)
 
 
-def build_card(product: Image.Image, price_now: str, price_before: str | None) -> bytes:
+def build_card(product: Image.Image, price_now: str, price_before: str | None, blur: bool = False) -> bytes:
     now = Decimal(price_now)
     card = Image.new("RGB", (W, H), WHITE)
     product = product.convert("RGBA")
     product.thumbnail((PANEL_X - 60, H - 80))
+    if blur:  # underwear shown on a model: hide the model, keep only a soft outline
+        product = product.filter(ImageFilter.GaussianBlur(max(product.size) // 18))
     card.paste(product, ((PANEL_X - product.width) // 2, (H - product.height) // 2), product)
     draw = ImageDraw.Draw(card)
     draw.rectangle([PANEL_X, 0, W, H], fill=RED)
@@ -48,7 +50,7 @@ def build_card(product: Image.Image, price_now: str, price_before: str | None) -
     return out.getvalue()
 
 
-def card_from_url(image_url: str, price_now: str, price_before: str | None) -> bytes:
+def card_from_url(image_url: str, price_now: str, price_before: str | None, blur: bool = False) -> bytes:
     response = requests.get(image_url, timeout=30, headers={"User-Agent": "Mozilla/5.0"})
     response.raise_for_status()
-    return build_card(Image.open(io.BytesIO(response.content)), price_now, price_before)
+    return build_card(Image.open(io.BytesIO(response.content)), price_now, price_before, blur)

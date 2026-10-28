@@ -159,10 +159,16 @@ def post_one(deals_path: Path, state_path: Path, slot_label: str, token: str, ch
         return "queue_empty"
     key, deal, text = picked
     photo: str | bytes = image_for(deal)
+    blur = bool(deal.get("blur"))
     try:
         photo = card_from_url(photo, fmt_price(deal["price_now"]),
-                              fmt_price(deal["price_before"]) if deal.get("price_before") else None)
+                              fmt_price(deal["price_before"]) if deal.get("price_before") else None, blur)
     except Exception as error:
+        if blur:  # never fall back to the unblurred product photo
+            state["posted"][key] = {"slot": slot_label, "status": "skipped_blur"}
+            save_state(state_path, state)
+            print(f"تعذر تصميم الصورة المموهة، تم تجاوز العرض {key}: {error}")
+            return "skipped"
         print(f"تعذر تصميم الصورة، ستُرسل صورة المنتج كما هي: {error}")
     # Reserve before sending: a timeout may still mean Telegram published it.
     state["slots"][slot_label] = key
