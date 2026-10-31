@@ -4,7 +4,7 @@ on:
   schedule:
     # GitHub delays cron runs a lot, so each run stays alive and checks every 30 seconds.
     # A new run only waits in the queue while the previous one is still working.
-    - cron: "*/20 6-22 * * *"
+    - cron: "*/20 9-22 * * *"
   workflow_dispatch:
     inputs:
       mode:
