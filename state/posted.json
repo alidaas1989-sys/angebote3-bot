@@ -1,1362 +1,1387 @@
 {
- "posted": {
-  "B001O8MI2K": {
-   "message_id": 166854,
-   "slot": "2026-10-27T18:15",
-   "status": "sent"
-  },
-  "B004CY8CEG": {
-   "message_id": 166869,
-   "slot": "2026-10-27T21:20",
-   "status": "sent"
-  },
-  "B005OJ7NQ6": {
-   "message_id": 167040,
-   "slot": "2026-10-30T18:00",
-   "status": "sent"
-  },
-  "B00AE41DIU": {
-   "message_id": 166847,
-   "slot": "2026-10-27T16:30",
-   "status": "sent"
-  },
-  "B00E5ZY7PK": {
-   "message_id": 167011,
-   "slot": "2026-10-29T23:30",
-   "status": "sent"
-  },
-  "B00F35J9TK": {
-   "message_id": 166818,
-   "slot": "2026-10-27T10:30",
-   "status": "sent"
-  },
-  "B00GQP1034": {
-   "message_id": 167053,
-   "slot": "2026-10-30T21:10",
-   "status": "sent"
-  },
-  "B00SX4N976": {
-   "message_id": 166839,
-   "slot": "2026-10-27T14:30",
-   "status": "sent"
-  },
-  "B011KE2QLK": {
-   "message_id": 166816,
-   "slot": "2026-10-27T09:15",
-   "status": "sent"
-  },
-  "B01D02VL16": {
-   "message_id": 166836,
-   "slot": "2026-10-27T13:45",
-   "status": "sent"
-  },
-  "B01HT0FREW": {
-   "message_id": 166837,
-   "slot": "2026-10-27T14:00",
-   "status": "sent"
-  },
-  "B01MAWS86N": {
-   "message_id": 166934,
-   "slot": "2026-10-28T22:10",
-   "status": "sent"
-  },
-  "B01MTYDSOO": {
-   "message_id": 166968,
-   "slot": "2026-10-29T14:15",
-   "status": "sent"
-  },
-  "B073Y77LCG": {
-   "message_id": 166820,
-   "slot": "2026-10-27T11:00",
-   "status": "sent"
-  },
-  "B0748MM3ZM": {
-   "message_id": 166877,
-   "slot": "2026-10-27T22:40",
-   "status": "sent"
-  },
-  "B075BPYQ6R": {
-   "message_id": 166844,
-   "slot": "2026-10-27T15:45",
-   "status": "sent"
-  },
-  "B075MGFZV4": {
-   "message_id": 166853,
-   "slot": "2026-10-27T18:00",
-   "status": "sent"
-  },
-  "B077D1V7SJ": {
-   "message_id": 167005,
-   "slot": "2026-10-29T22:30",
-   "status": "sent"
-  },
-  "B077MBJHTJ": {
-   "message_id": 166862,
-   "slot": "2026-10-27T20:10",
-   "status": "sent"
-  },
-  "B07883BNTV": {
-   "message_id": 167056,
-   "slot": "2026-10-30T21:40",
-   "status": "sent"
-  },
-  "B07BKW4NZB": {
-   "message_id": 167059,
-   "slot": "2026-10-30T22:10",
-   "status": "sent"
-  },
-  "B07FM6SKMG": {
-   "message_id": 166924,
-   "slot": "2026-10-28T20:20",
-   "status": "sent"
-  },
-  "B07JFDT4R2": {
-   "message_id": 166925,
-   "slot": "2026-10-28T20:30",
-   "status": "sent"
-  },
-  "B07KZRKYM6": {
-   "message_id": 166908,
-   "slot": "2026-10-28T16:30",
-   "status": "sent"
-  },
-  "B07MGPVZX4": {
-   "message_id": 166848,
-   "slot": "2026-10-27T16:45",
-   "status": "sent"
-  },
-  "B07NY457J4": {
-   "message_id": 166838,
-   "slot": "2026-10-27T14:15",
-   "status": "sent"
-  },
-  "B07Q619ZKS": {
-   "message_id": 167018,
-   "slot": "2026-10-30T09:30",
-   "status": "sent"
-  },
-  "B07R9ZHX96": {
-   "message_id": 167077,
-   "slot": "2026-10-31T10:00",
-   "status": "sent"
-  },
-  "B07TXZD22Q": {
-   "message_id": 166994,
-   "slot": "2026-10-29T20:40",
-   "status": "sent"
-  },
-  "B07YYP3CYM": {
-   "message_id": 166932,
-   "slot": "2026-10-28T21:40",
-   "status": "sent"
-  },
-  "B07ZPT5L8R": {
-   "message_id": 166906,
-   "slot": "2026-10-28T16:00",
-   "status": "sent"
-  },
-  "B0817LMPDX": {
-   "message_id": 166970,
-   "slot": "2026-10-29T14:45",
-   "status": "sent"
-  },
-  "B08224FZKW": {
-   "message_id": 167019,
-   "slot": "2026-10-30T11:00",
-   "status": "sent"
-  },
-  "B082SWM46Z": {
-   "message_id": 166889,
-   "slot": "2026-10-28T11:45",
-   "status": "sent"
-  },
-  "B084MLV42X": {
-   "message_id": 167008,
-   "slot": "2026-10-29T23:00",
-   "status": "sent"
-  },
-  "B085S2147W": {
-   "message_id": 166935,
-   "slot": "2026-10-28T22:20",
-   "status": "sent"
-  },
-  "B086177CR3": {
-   "message_id": 166976,
-   "slot": "2026-10-29T16:30",
-   "status": "sent"
-  },
-  "B086Q2Q2HK": {
-   "message_id": 166821,
-   "slot": "2026-10-27T11:15",
-   "status": "sent"
-  },
-  "B087TXHLVQ": {
-   "message_id": 167027,
-   "slot": "2026-10-30T13:00",
-   "status": "sent"
-  },
-  "B08953DL1W": {
-   "message_id": 167037,
-   "slot": "2026-10-30T15:30",
-   "status": "sent"
-  },
-  "B08BC6M893": {
-   "message_id": 167051,
-   "slot": "2026-10-30T21:00",
-   "status": "sent"
-  },
-  "B08BWYVCZ9": {
-   "message_id": 166978,
-   "slot": "2026-10-29T17:00",
-   "status": "sent"
-  },
-  "B08BZPXCKD": {
-   "message_id": 166923,
-   "slot": "2026-10-28T20:10",
-   "status": "sent"
-  },
-  "B08CL61986": {
-   "message_id": 166845,
-   "slot": "2026-10-27T16:00",
-   "status": "sent"
-  },
-  "B08CXJVPCG": {
-   "message_id": 166852,
-   "slot": "2026-10-27T17:45",
-   "status": "sent"
-  },
-  "B08CXVQ3KZ": {
-   "message_id": 167069,
-   "slot": "2026-10-30T23:30",
-   "status": "sent"
-  },
-  "B08DK5474W": {
-   "message_id": 166835,
-   "slot": "2026-10-27T13:30",
-   "status": "sent"
-  },
-  "B08JZ6MPF3": {
-   "message_id": 167009,
-   "slot": "2026-10-29T23:10",
-   "status": "sent"
-  },
-  "B08KG1SXCZ": {
-   "message_id": 166936,
-   "slot": "2026-10-28T22:30",
-   "status": "sent"
-  },
-  "B08QNCZXSP": {
-   "message_id": 166902,
-   "slot": "2026-10-28T15:00",
-   "status": "sent"
-  },
-  "B08R4ZPRV3": {
-   "message_id": 166876,
-   "slot": "2026-10-27T22:30",
-   "status": "sent"
-  },
-  "B08T6DB8P4": {
-   "message_id": 167058,
-   "slot": "2026-10-30T22:00",
-   "status": "sent"
-  },
-  "B08VWTY5G3": {
-   "message_id": 167062,
-   "slot": "2026-10-30T22:40",
-   "status": "sent"
-  },
-  "B08WWF2VN1": {
-   "message_id": 167038,
-   "slot": "2026-10-30T17:30",
-   "status": "sent"
-  },
-  "B08XBSLSZB": {
-   "message_id": 167057,
-   "slot": "2026-10-30T21:50",
-   "status": "sent"
-  },
-  "B0967WM727": {
-   "message_id": 167004,
-   "slot": "2026-10-29T22:20",
-   "status": "sent"
-  },
-  "B096XVDVH4": {
-   "message_id": 166974,
-   "slot": "2026-10-29T15:45",
-   "status": "sent"
-  },
-  "B09BNFVPVG": {
-   "message_id": 167049,
-   "slot": "2026-10-30T20:50",
-   "status": "sent"
-  },
-  "B09CZ8TQTM": {
-   "message_id": 166834,
-   "slot": "2026-10-27T13:15",
-   "status": "sent"
-  },
-  "B09DCV3CC2": {
-   "message_id": 166851,
-   "slot": "2026-10-27T17:30",
-   "status": "sent"
-  },
-  "B09DCXVC4H": {
-   "message_id": 166894,
-   "slot": "2026-10-28T13:00",
-   "status": "sent"
-  },
-  "B09DPLQ3RG": {
-   "message_id": 166841,
-   "slot": "2026-10-27T15:00",
-   "status": "sent"
-  },
-  "B09FGN6HP9": {
-   "message_id": 166815,
-   "slot": "2026-10-27T01:29-test",
-   "status": "sent"
-  },
-  "B09KLRSG71": {
-   "message_id": 166840,
-   "slot": "2026-10-27T14:45",
-   "status": "sent"
-  },
-  "B09KNFD4WS": {
-   "message_id": 166969,
-   "slot": "2026-10-29T14:30",
-   "status": "sent"
-  },
-  "B09MSJ454B": {
-   "message_id": 167043,
-   "slot": "2026-10-30T18:45",
-   "status": "sent"
-  },
-  "B09PD2XXR5": {
-   "message_id": 166849,
-   "slot": "2026-10-27T17:00",
-   "status": "sent"
-  },
-  "B09PFKSFFR": {
-   "message_id": 166926,
-   "slot": "2026-10-28T20:40",
-   "status": "sent"
-  },
-  "B09XRBGQWD": {
-   "message_id": 167031,
-   "slot": "2026-10-30T14:00",
-   "status": "sent"
-  },
-  "B0B2Q6KKHZ": {
-   "message_id": 166875,
-   "slot": "2026-10-27T22:20",
-   "status": "sent"
-  },
-  "B0B3D7ZWFS": {
-   "message_id": 167029,
-   "slot": "2026-10-30T13:30",
-   "status": "sent"
-  },
-  "B0B57J39DD": {
-   "message_id": 166829,
-   "slot": "2026-10-27T12:00",
-   "status": "sent"
-  },
-  "B0B99H5F55": {
-   "message_id": 166985,
-   "slot": "2026-10-29T18:45",
-   "status": "sent"
-  },
-  "B0BBTD77GX": {
-   "message_id": 167060,
-   "slot": "2026-10-30T22:20",
-   "status": "sent"
-  },
-  "B0BBTVBJYX": {
-   "message_id": 166819,
-   "slot": "2026-10-27T10:45",
-   "status": "sent"
-  },
-  "B0BDS9DC4F": {
-   "message_id": 167020,
-   "slot": "2026-10-30T11:15",
-   "status": "sent"
-  },
-  "B0BFQHTXYZ": {
-   "message_id": 167033,
-   "slot": "2026-10-30T14:30",
-   "status": "sent"
-  },
-  "B0BJPG2D2B": {
-   "message_id": 167001,
-   "slot": "2026-10-29T21:50",
-   "status": "sent"
-  },
-  "B0BL27BC6G": {
-   "message_id": 166842,
-   "slot": "2026-10-27T15:15",
-   "status": "sent"
-  },
-  "B0BN86WP79": {
-   "message_id": 166898,
-   "slot": "2026-10-28T14:00",
-   "status": "sent"
-  },
-  "B0BNGMG9RZ": {
-   "message_id": 166870,
-   "slot": "2026-10-27T21:30",
-   "status": "sent"
-  },
-  "B0BNGS6XYL": {
-   "message_id": 166893,
-   "slot": "2026-10-28T12:45",
-   "status": "sent"
-  },
-  "B0BR55ZKNV": {
-   "message_id": 166928,
-   "slot": "2026-10-28T21:00",
-   "status": "sent"
-  },
-  "B0BR5LY1X6": {
-   "message_id": 167061,
-   "slot": "2026-10-30T22:30",
-   "status": "sent"
-  },
-  "B0BRNJ4Z5V": {
-   "message_id": 166931,
-   "slot": "2026-10-28T21:30",
-   "status": "sent"
-  },
-  "B0BWJWR6P5": {
-   "message_id": 166929,
-   "slot": "2026-10-28T21:10",
-   "status": "sent"
-  },
-  "B0BYDMZ3LT": {
-   "message_id": 166817,
-   "slot": "2026-10-27T10:00",
-   "status": "sent"
-  },
-  "B0C28CD3BR": {
-   "message_id": 166933,
-   "slot": "2026-10-28T22:00",
-   "status": "sent"
-  },
-  "B0C8T1RR23": {
-   "message_id": 166871,
-   "slot": "2026-10-27T21:40",
-   "status": "sent"
-  },
-  "B0CHK3JCQF": {
-   "message_id": 166982,
-   "slot": "2026-10-29T18:00",
-   "status": "sent"
-  },
-  "B0CKFCZN1L": {
-   "message_id": 166888,
-   "slot": "2026-10-28T11:30",
-   "status": "sent"
-  },
-  "B0CKY3KF4K": {
-   "message_id": 166930,
-   "slot": "2026-10-28T21:20",
-   "status": "sent"
-  },
-  "B0CN2KSVW1": {
-   "message_id": 166831,
-   "slot": "2026-10-27T12:30",
-   "status": "sent"
-  },
-  "B0CNGS6HDY": {
-   "message_id": 166887,
-   "slot": "2026-10-28T11:15",
-   "status": "sent"
-  },
-  "B0CNMJQYC9": {
-   "message_id": 166900,
-   "slot": "2026-10-28T14:30",
-   "status": "sent"
-  },
-  "B0CNVR1RC3": {
-   "message_id": 166881,
-   "slot": "2026-10-27T23:20",
-   "status": "sent"
-  },
-  "B0CP5FXRZB": {
-   "message_id": 166973,
-   "slot": "2026-10-29T15:30",
-   "status": "sent"
-  },
-  "B0CP7WLWQY": {
-   "message_id": 166895,
-   "slot": "2026-10-28T13:15",
-   "status": "sent"
-  },
-  "B0CT93NX7P": {
-   "message_id": 166823,
-   "slot": "2026-10-27T11:45",
-   "status": "sent"
-  },
-  "B0CTVQVDMG": {
-   "message_id": 166882,
-   "slot": "2026-10-27T23:30",
-   "status": "sent"
-  },
-  "B0CVDCGT6W": {
-   "message_id": 166983,
-   "slot": "2026-10-29T18:15",
-   "status": "sent"
-  },
-  "B0CXGYCPXY": {
-   "message_id": 167066,
-   "slot": "2026-10-30T23:20",
-   "status": "sent"
-  },
-  "B0CY3TMG9K": {
-   "message_id": 166863,
-   "slot": "2026-10-27T20:20",
-   "status": "sent"
-  },
-  "B0CZTZNS3Y": {
-   "message_id": 166897,
-   "slot": "2026-10-28T13:45",
-   "status": "sent"
-  },
-  "B0D25BFGYD": {
-   "message_id": 167000,
-   "slot": "2026-10-29T21:40",
-   "status": "sent"
-  },
-  "B0D4C2Y291": {
-   "message_id": 166886,
-   "slot": "2026-10-28T11:00",
-   "status": "sent"
-  },
-  "B0D564BWNR": {
-   "message_id": 166846,
-   "slot": "2026-10-27T16:15",
-   "status": "sent"
-  },
-  "B0D7DKJNSY": {
-   "message_id": 166921,
-   "slot": "2026-10-28T19:45",
-   "status": "sent"
-  },
-  "B0D7MSW3H8": {
-   "message_id": 167054,
-   "slot": "2026-10-30T21:20",
-   "status": "sent"
-  },
-  "B0D8QRHQNL": {
-   "message_id": 166981,
-   "slot": "2026-10-29T17:45",
-   "status": "sent"
-  },
-  "B0D9QNZD19": {
-   "message_id": 167003,
-   "slot": "2026-10-29T22:10",
-   "status": "sent"
-  },
-  "B0DB6G12W7": {
-   "message_id": 166859,
-   "slot": "2026-10-27T19:30",
-   "status": "sent"
-  },
-  "B0DCB9C26S": {
-   "message_id": 167076,
-   "slot": "2026-10-31T09:45",
-   "status": "sent"
-  },
-  "B0DDPH9C4R": {
-   "message_id": 166955,
-   "slot": "2026-10-29T11:00",
-   "status": "sent"
-  },
-  "B0DF7PNNY3": {
-   "message_id": 166971,
-   "slot": "2026-10-29T15:00",
-   "status": "sent"
-  },
-  "B0DFB81517": {
-   "message_id": 167030,
-   "slot": "2026-10-30T13:45",
-   "status": "sent"
-  },
-  "B0DFYDTPMJ": {
-   "message_id": 166995,
-   "slot": "2026-10-29T20:50",
-   "status": "sent"
-  },
-  "B0DJQN5DJG": {
-   "message_id": 166997,
-   "slot": "2026-10-29T21:10",
-   "status": "sent"
-  },
-  "B0DK2BK635": {
-   "message_id": 166920,
-   "slot": "2026-10-28T19:30",
-   "status": "sent"
-  },
-  "B0DMNWQCFV": {
-   "message_id": 167044,
-   "slot": "2026-10-30T19:00",
-   "status": "sent"
-  },
-  "B0DN292JVP": {
-   "message_id": 166904,
-   "slot": "2026-10-28T15:30",
-   "status": "sent"
-  },
-  "B0DNG343M8": {
-   "message_id": 167055,
-   "slot": "2026-10-30T21:30",
-   "status": "sent"
-  },
-  "B0DP6RBNZF": {
-   "message_id": 166993,
-   "slot": "2026-10-29T20:30",
-   "status": "sent"
-  },
-  "B0DQPXTQDS": {
-   "message_id": 166903,
-   "slot": "2026-10-28T15:15",
-   "status": "sent"
-  },
-  "B0DSR64KZJ": {
-   "message_id": 167024,
-   "slot": "2026-10-30T12:15",
-   "status": "sent"
-  },
-  "B0DSYHJDX1": {
-   "message_id": 166891,
-   "slot": "2026-10-28T12:15",
-   "status": "sent"
-  },
-  "B0DT9JYLLC": {
-   "message_id": 166833,
-   "slot": "2026-10-27T13:00",
-   "status": "sent"
-  },
-  "B0DTTJVM43": {
-   "message_id": 166918,
-   "slot": "2026-10-28T19:00",
-   "status": "sent"
-  },
-  "B0DV5RRL9F": {
-   "message_id": 166937,
-   "slot": "2026-10-28T22:40",
-   "status": "sent"
-  },
-  "B0DVCF9G8H": {
-   "message_id": 167002,
-   "slot": "2026-10-29T22:00",
-   "status": "sent"
-  },
-  "B0DVCFJVSV": {
-   "message_id": 166884,
-   "slot": "2026-10-28T10:30",
-   "status": "sent"
-  },
-  "B0DWK6P2GH": {
-   "message_id": 166822,
-   "slot": "2026-10-27T11:30",
-   "status": "sent"
-  },
-  "B0DWL8T8NN": {
-   "message_id": 167021,
-   "slot": "2026-10-30T11:30",
-   "status": "sent"
-  },
-  "B0DZ77XFGQ": {
-   "message_id": 166832,
-   "slot": "2026-10-27T12:45",
-   "status": "sent"
-  },
-  "B0DZXDCXNL": {
-   "message_id": 166980,
-   "slot": "2026-10-29T17:30",
-   "status": "sent"
-  },
-  "B0F1953SXT": {
-   "message_id": 167063,
-   "slot": "2026-10-30T23:10",
-   "status": "sent"
-  },
-  "B0F2GGYSXY": {
-   "message_id": 166951,
-   "slot": "2026-10-29T10:00",
-   "status": "sent"
-  },
-  "B0F2XDPHFR": {
-   "message_id": 166899,
-   "slot": "2026-10-28T14:15",
-   "status": "sent"
-  },
-  "B0F3351CSQ": {
-   "message_id": 166992,
-   "slot": "2026-10-29T20:20",
-   "status": "sent"
-  },
-  "B0F33XWV69": {
-   "message_id": 166953,
-   "slot": "2026-10-29T10:30",
-   "status": "sent"
-  },
-  "B0F3JLZ9PP": {
-   "message_id": 166910,
-   "slot": "2026-10-28T17:00",
-   "status": "sent"
-  },
-  "B0F3N7GBD7": {
-   "message_id": 166975,
-   "slot": "2026-10-29T16:15",
-   "status": "sent"
-  },
-  "B0F44124PS": {
-   "message_id": 166907,
-   "slot": "2026-10-28T16:15",
-   "status": "sent"
-  },
-  "B0F4WMTW9C": {
-   "message_id": 167026,
-   "slot": "2026-10-30T12:45",
-   "status": "sent"
-  },
-  "B0F634G3C3": {
-   "message_id": 166967,
-   "slot": "2026-10-29T14:00",
-   "status": "sent"
-  },
-  "B0F6354BYN": {
-   "message_id": 166965,
-   "slot": "2026-10-29T13:30",
-   "status": "sent"
-  },
-  "B0F6C9DL12": {
-   "message_id": 166905,
-   "slot": "2026-10-28T15:45",
-   "status": "sent"
-  },
-  "B0F6WG3MSC": {
-   "message_id": 167010,
-   "slot": "2026-10-29T23:20",
-   "status": "sent"
-  },
-  "B0F8C2GJKQ": {
-   "message_id": 167042,
-   "slot": "2026-10-30T18:30",
-   "status": "sent"
-  },
-  "B0F8VNVTG3": {
-   "message_id": 166966,
-   "slot": "2026-10-29T13:45",
-   "status": "sent"
-  },
-  "B0F93PD2V7": {
-   "message_id": 166958,
-   "slot": "2026-10-29T11:45",
-   "status": "sent"
-  },
-  "B0F9B19W3P": {
-   "message_id": 167006,
-   "slot": "2026-10-29T22:40",
-   "status": "sent"
-  },
-  "B0FB3SNKRS": {
-   "message_id": 166914,
-   "slot": "2026-10-28T18:00",
-   "status": "sent"
-  },
-  "B0FBG4QYFZ": {
-   "message_id": 166879,
-   "slot": "2026-10-27T23:00",
-   "status": "sent"
-  },
-  "B0FC2RYMHC": {
-   "message_id": 167036,
-   "slot": "2026-10-30T15:15",
-   "status": "sent"
-  },
-  "B0FCFQCM4Y": {
-   "message_id": 166912,
-   "slot": "2026-10-28T17:30",
-   "status": "sent"
-  },
-  "B0FDLF3B17": {
-   "message_id": 166866,
-   "slot": "2026-10-27T20:50",
-   "status": "sent"
-  },
-  "B0FFCF6XSW": {
-   "message_id": 167025,
-   "slot": "2026-10-30T12:30",
-   "status": "sent"
-  },
-  "B0FFCQGDM2": {
-   "message_id": 166957,
-   "slot": "2026-10-29T11:30",
-   "status": "sent"
-  },
-  "B0FGCZ42DV": {
-   "message_id": 167032,
-   "slot": "2026-10-30T14:15",
-   "status": "sent"
-  },
-  "B0FHWGG5WV": {
-   "message_id": 166892,
-   "slot": "2026-10-28T12:30",
-   "status": "sent"
-  },
-  "B0FKHC557S": {
-   "message_id": 166996,
-   "slot": "2026-10-29T21:00",
-   "status": "sent"
-  },
-  "B0FL6PWX3F": {
-   "message_id": 166878,
-   "slot": "2026-10-27T22:50",
-   "status": "sent"
-  },
-  "B0FPFKWLCN": {
-   "message_id": 167045,
-   "slot": "2026-10-30T19:15",
-   "status": "sent"
-  },
-  "B0FPFSK5ZW": {
-   "message_id": 166913,
-   "slot": "2026-10-28T17:45",
-   "status": "sent"
-  },
-  "B0FTT4QP5H": {
-   "message_id": 167022,
-   "slot": "2026-10-30T11:45",
-   "status": "sent"
-  },
-  "B0FVF4BZC5": {
-   "message_id": 166909,
-   "slot": "2026-10-28T16:45",
-   "status": "sent"
-  },
-  "B0FVXYMRBB": {
-   "message_id": 166977,
-   "slot": "2026-10-29T16:45",
-   "status": "sent"
-  },
-  "B0FWBMR91T": {
-   "message_id": 166890,
-   "slot": "2026-10-28T12:00",
-   "status": "sent"
-  },
-  "B0FWQ1NZFJ": {
-   "message_id": 166868,
-   "slot": "2026-10-27T21:10",
-   "status": "sent"
-  },
-  "B0FX28K2VB": {
-   "message_id": 166873,
-   "slot": "2026-10-27T22:00",
-   "status": "sent"
-  },
-  "B0FXMRCQ3G": {
-   "message_id": 166856,
-   "slot": "2026-10-27T18:45",
-   "status": "sent"
-  },
-  "B0G11JRYTL": {
-   "message_id": 167046,
-   "slot": "2026-10-30T19:30",
-   "status": "sent"
-  },
-  "B0G1KBZY2L": {
-   "message_id": 166991,
-   "slot": "2026-10-29T20:10",
-   "status": "sent"
-  },
-  "B0G1LSZSX6": {
-   "message_id": 166927,
-   "slot": "2026-10-28T20:50",
-   "status": "sent"
-  },
-  "B0G1YBBR54": {
-   "message_id": 166956,
-   "slot": "2026-10-29T11:15",
-   "status": "sent"
-  },
-  "B0G29CBDFK": {
-   "message_id": 166872,
-   "slot": "2026-10-27T21:50",
-   "status": "sent"
-  },
-  "B0G2JJYN88": {
-   "message_id": 166987,
-   "slot": "2026-10-29T19:15",
-   "status": "sent"
-  },
-  "B0G5YQJT7H": {
-   "message_id": 166830,
-   "slot": "2026-10-27T12:15",
-   "status": "sent"
-  },
-  "B0GCH5B4LP": {
-   "message_id": 166998,
-   "slot": "2026-10-29T21:20",
-   "status": "sent"
-  },
-  "B0GCLN1HKM": {
-   "message_id": 166880,
-   "slot": "2026-10-27T23:10",
-   "status": "sent"
-  },
-  "B0GCMYSG14": {
-   "message_id": 166885,
-   "slot": "2026-10-28T10:45",
-   "status": "sent"
-  },
-  "B0GF3DZ8WF": {
-   "message_id": 166919,
-   "slot": "2026-10-28T19:15",
-   "status": "sent"
-  },
-  "B0GF3HXLNQ": {
-   "message_id": 166917,
-   "slot": "2026-10-28T18:45",
-   "status": "sent"
-  },
-  "B0GGZDC9WH": {
-   "message_id": 166940,
-   "slot": "2026-10-28T23:10",
-   "status": "sent"
-  },
-  "B0GHDPY2NJ": {
-   "message_id": 166954,
-   "slot": "2026-10-29T10:45",
-   "status": "sent"
-  },
-  "B0GHQHM3Z7": {
-   "message_id": 166874,
-   "slot": "2026-10-27T22:10",
-   "status": "sent"
-  },
-  "B0GKNYZXXB": {
-   "message_id": 167041,
-   "slot": "2026-10-30T18:15",
-   "status": "sent"
-  },
-  "B0GKVCZGJM": {
-   "message_id": 166861,
-   "slot": "2026-10-27T20:00",
-   "status": "sent"
-  },
-  "B0GKVHJQB4": {
-   "message_id": 166864,
-   "slot": "2026-10-27T20:30",
-   "status": "sent"
-  },
-  "B0GKVKT87N": {
-   "message_id": 166860,
-   "slot": "2026-10-27T19:45",
-   "status": "sent"
-  },
-  "B0GL28PKDK": {
-   "message_id": 166988,
-   "slot": "2026-10-29T19:30",
-   "status": "sent"
-  },
-  "B0GL2JK4GX": {
-   "message_id": 166865,
-   "slot": "2026-10-27T20:40",
-   "status": "sent"
-  },
-  "B0GLJGQZHV": {
-   "message_id": 166922,
-   "slot": "2026-10-28T20:00",
-   "status": "sent"
-  },
-  "B0GPX8629T": {
-   "message_id": 166901,
-   "slot": "2026-10-28T14:45",
-   "status": "sent"
-  },
-  "B0GTR84GPV": {
-   "message_id": 166989,
-   "slot": "2026-10-29T19:45",
-   "status": "sent"
-  },
-  "B0GTVH4JGR": {
-   "message_id": 166843,
-   "slot": "2026-10-27T15:30",
-   "status": "sent"
-  },
-  "B0GVMRBZPW": {
-   "message_id": 167039,
-   "slot": "2026-10-30T17:45",
-   "status": "sent"
-  },
-  "B0GVV2SRGV": {
-   "message_id": 166986,
-   "slot": "2026-10-29T19:00",
-   "status": "sent"
-  },
-  "B0GW3SR86G": {
-   "message_id": 166979,
-   "slot": "2026-10-29T17:15",
-   "status": "sent"
-  },
-  "B0GY8XXMQZ": {
-   "message_id": 166938,
-   "slot": "2026-10-28T22:50",
-   "status": "sent"
-  },
-  "B0GZPHJRZQ": {
-   "message_id": 166896,
-   "slot": "2026-10-28T13:30",
-   "status": "sent"
-  },
-  "B0H1HQ266B": {
-   "message_id": 166916,
-   "slot": "2026-10-28T18:30",
-   "status": "sent"
-  },
-  "B0H1XTDJ6R": {
-   "message_id": 166883,
-   "slot": "2026-10-28T09:15",
-   "status": "sent"
-  },
-  "B0H3P6YDRB": {
-   "message_id": 167034,
-   "slot": "2026-10-30T14:45",
-   "status": "sent"
-  },
-  "B0H45NGKDY": {
-   "message_id": 166990,
-   "slot": "2026-10-29T20:00",
-   "status": "sent"
-  },
-  "B0H45XGF65": {
-   "message_id": 167028,
-   "slot": "2026-10-30T13:15",
-   "status": "sent"
-  },
-  "B0H4KL72TS": {
-   "message_id": 166867,
-   "slot": "2026-10-27T21:00",
-   "status": "sent"
-  },
-  "B0H4LB6C7P": {
-   "message_id": 166999,
-   "slot": "2026-10-29T21:30",
-   "status": "sent"
-  },
-  "B0H6GD47Y5": {
-   "message_id": 166941,
-   "slot": "2026-10-28T23:20",
-   "status": "sent"
-  },
-  "B0H7C3MPJ2": {
-   "message_id": 166915,
-   "slot": "2026-10-28T18:15",
-   "status": "sent"
-  },
-  "B0H87NB4X9": {
-   "message_id": 166911,
-   "slot": "2026-10-28T17:15",
-   "status": "sent"
-  },
-  "B0H97YFP68": {
-   "message_id": 166984,
-   "slot": "2026-10-29T18:30",
-   "status": "sent"
-  },
-  "B0H9KTXKTW": {
-   "message_id": 166850,
-   "slot": "2026-10-27T17:15",
-   "status": "sent"
-  },
-  "B0H9LML7HZ": {
-   "message_id": 166858,
-   "slot": "2026-10-27T19:15",
-   "status": "sent"
-  },
-  "B0H9LQ6TFM": {
-   "message_id": 166855,
-   "slot": "2026-10-27T18:30",
-   "status": "sent"
-  },
-  "B0H9LT2JPP": {
-   "message_id": 166857,
-   "slot": "2026-10-27T19:00",
-   "status": "sent"
-  },
-  "B0HBP3MDJP": {
-   "message_id": 166949,
-   "slot": "2026-10-29T09:30",
-   "status": "sent"
-  },
-  "B0HC3K7N43": {
-   "message_id": 167007,
-   "slot": "2026-10-29T22:50",
-   "status": "sent"
-  },
-  "B0HCZGK4S3": {
-   "message_id": 167035,
-   "slot": "2026-10-30T15:00",
-   "status": "sent"
-  },
-  "B0HDTLKCYL": {
-   "message_id": 166952,
-   "slot": "2026-10-29T10:15",
-   "status": "sent"
-  },
-  "B0HG1SVK86": {
-   "message_id": 166972,
-   "slot": "2026-10-29T15:15",
-   "status": "sent"
-  },
-  "B0HH98QRGR": {
-   "message_id": 167023,
-   "slot": "2026-10-30T12:00",
-   "status": "sent"
-  },
-  "B0HKFNM6J6": {
-   "message_id": 166950,
-   "slot": "2026-10-29T09:45",
-   "status": "sent"
-  },
-  "B0HMD784S3": {
-   "message_id": 166939,
-   "slot": "2026-10-28T23:00",
-   "status": "sent"
-  },
-  "B0HMKN92WL": {
-   "message_id": 167079,
-   "slot": "2026-10-31T10:15",
-   "status": "sent"
+  "posted": {
+    "B001O8MI2K": {
+      "message_id": 166854,
+      "slot": "2026-10-27T18:15",
+      "status": "sent"
+    },
+    "B004CY8CEG": {
+      "message_id": 166869,
+      "slot": "2026-10-27T21:20",
+      "status": "sent"
+    },
+    "B005OJ7NQ6": {
+      "message_id": 167040,
+      "slot": "2026-10-30T18:00",
+      "status": "sent"
+    },
+    "B00AE41DIU": {
+      "message_id": 166847,
+      "slot": "2026-10-27T16:30",
+      "status": "sent"
+    },
+    "B00E5ZY7PK": {
+      "message_id": 167011,
+      "slot": "2026-10-29T23:30",
+      "status": "sent"
+    },
+    "B00F35J9TK": {
+      "message_id": 166818,
+      "slot": "2026-10-27T10:30",
+      "status": "sent"
+    },
+    "B00GQP1034": {
+      "message_id": 167053,
+      "slot": "2026-10-30T21:10",
+      "status": "sent"
+    },
+    "B00SX4N976": {
+      "message_id": 166839,
+      "slot": "2026-10-27T14:30",
+      "status": "sent"
+    },
+    "B011KE2QLK": {
+      "message_id": 166816,
+      "slot": "2026-10-27T09:15",
+      "status": "sent"
+    },
+    "B01D02VL16": {
+      "message_id": 166836,
+      "slot": "2026-10-27T13:45",
+      "status": "sent"
+    },
+    "B01HT0FREW": {
+      "message_id": 166837,
+      "slot": "2026-10-27T14:00",
+      "status": "sent"
+    },
+    "B01MAWS86N": {
+      "message_id": 166934,
+      "slot": "2026-10-28T22:10",
+      "status": "sent"
+    },
+    "B01MTYDSOO": {
+      "message_id": 166968,
+      "slot": "2026-10-29T14:15",
+      "status": "sent"
+    },
+    "B073Y77LCG": {
+      "message_id": 166820,
+      "slot": "2026-10-27T11:00",
+      "status": "sent"
+    },
+    "B0748MM3ZM": {
+      "message_id": 166877,
+      "slot": "2026-10-27T22:40",
+      "status": "sent"
+    },
+    "B075BPYQ6R": {
+      "message_id": 166844,
+      "slot": "2026-10-27T15:45",
+      "status": "sent"
+    },
+    "B075MGFZV4": {
+      "message_id": 166853,
+      "slot": "2026-10-27T18:00",
+      "status": "sent"
+    },
+    "B077D1V7SJ": {
+      "message_id": 167005,
+      "slot": "2026-10-29T22:30",
+      "status": "sent"
+    },
+    "B077MBJHTJ": {
+      "message_id": 166862,
+      "slot": "2026-10-27T20:10",
+      "status": "sent"
+    },
+    "B07883BNTV": {
+      "message_id": 167056,
+      "slot": "2026-10-30T21:40",
+      "status": "sent"
+    },
+    "B07BKW4NZB": {
+      "message_id": 167059,
+      "slot": "2026-10-30T22:10",
+      "status": "sent"
+    },
+    "B07FM6SKMG": {
+      "message_id": 166924,
+      "slot": "2026-10-28T20:20",
+      "status": "sent"
+    },
+    "B07JFDT4R2": {
+      "message_id": 166925,
+      "slot": "2026-10-28T20:30",
+      "status": "sent"
+    },
+    "B07KZRKYM6": {
+      "message_id": 166908,
+      "slot": "2026-10-28T16:30",
+      "status": "sent"
+    },
+    "B07MGPVZX4": {
+      "message_id": 166848,
+      "slot": "2026-10-27T16:45",
+      "status": "sent"
+    },
+    "B07NY457J4": {
+      "message_id": 166838,
+      "slot": "2026-10-27T14:15",
+      "status": "sent"
+    },
+    "B07Q619ZKS": {
+      "message_id": 167018,
+      "slot": "2026-10-30T09:30",
+      "status": "sent"
+    },
+    "B07R9ZHX96": {
+      "message_id": 167077,
+      "slot": "2026-10-31T10:00",
+      "status": "sent"
+    },
+    "B07TXZD22Q": {
+      "message_id": 166994,
+      "slot": "2026-10-29T20:40",
+      "status": "sent"
+    },
+    "B07YYP3CYM": {
+      "message_id": 166932,
+      "slot": "2026-10-28T21:40",
+      "status": "sent"
+    },
+    "B07ZPT5L8R": {
+      "message_id": 166906,
+      "slot": "2026-10-28T16:00",
+      "status": "sent"
+    },
+    "B0817LMPDX": {
+      "message_id": 166970,
+      "slot": "2026-10-29T14:45",
+      "status": "sent"
+    },
+    "B08224FZKW": {
+      "message_id": 167019,
+      "slot": "2026-10-30T11:00",
+      "status": "sent"
+    },
+    "B082SWM46Z": {
+      "message_id": 166889,
+      "slot": "2026-10-28T11:45",
+      "status": "sent"
+    },
+    "B084MLV42X": {
+      "message_id": 167008,
+      "slot": "2026-10-29T23:00",
+      "status": "sent"
+    },
+    "B085S2147W": {
+      "message_id": 166935,
+      "slot": "2026-10-28T22:20",
+      "status": "sent"
+    },
+    "B086177CR3": {
+      "message_id": 166976,
+      "slot": "2026-10-29T16:30",
+      "status": "sent"
+    },
+    "B086Q2Q2HK": {
+      "message_id": 166821,
+      "slot": "2026-10-27T11:15",
+      "status": "sent"
+    },
+    "B087TXHLVQ": {
+      "message_id": 167027,
+      "slot": "2026-10-30T13:00",
+      "status": "sent"
+    },
+    "B08953DL1W": {
+      "message_id": 167037,
+      "slot": "2026-10-30T15:30",
+      "status": "sent"
+    },
+    "B08BC6M893": {
+      "message_id": 167051,
+      "slot": "2026-10-30T21:00",
+      "status": "sent"
+    },
+    "B08BWYVCZ9": {
+      "message_id": 166978,
+      "slot": "2026-10-29T17:00",
+      "status": "sent"
+    },
+    "B08BZPXCKD": {
+      "message_id": 166923,
+      "slot": "2026-10-28T20:10",
+      "status": "sent"
+    },
+    "B08CL61986": {
+      "message_id": 166845,
+      "slot": "2026-10-27T16:00",
+      "status": "sent"
+    },
+    "B08CXJVPCG": {
+      "message_id": 166852,
+      "slot": "2026-10-27T17:45",
+      "status": "sent"
+    },
+    "B08CXVQ3KZ": {
+      "message_id": 167069,
+      "slot": "2026-10-30T23:30",
+      "status": "sent"
+    },
+    "B08DK5474W": {
+      "message_id": 166835,
+      "slot": "2026-10-27T13:30",
+      "status": "sent"
+    },
+    "B08JZ6MPF3": {
+      "message_id": 167009,
+      "slot": "2026-10-29T23:10",
+      "status": "sent"
+    },
+    "B08KG1SXCZ": {
+      "message_id": 166936,
+      "slot": "2026-10-28T22:30",
+      "status": "sent"
+    },
+    "B08QNCZXSP": {
+      "message_id": 166902,
+      "slot": "2026-10-28T15:00",
+      "status": "sent"
+    },
+    "B08R4ZPRV3": {
+      "message_id": 166876,
+      "slot": "2026-10-27T22:30",
+      "status": "sent"
+    },
+    "B08T6DB8P4": {
+      "message_id": 167058,
+      "slot": "2026-10-30T22:00",
+      "status": "sent"
+    },
+    "B08VWTY5G3": {
+      "message_id": 167062,
+      "slot": "2026-10-30T22:40",
+      "status": "sent"
+    },
+    "B08WWF2VN1": {
+      "message_id": 167038,
+      "slot": "2026-10-30T17:30",
+      "status": "sent"
+    },
+    "B08XBSLSZB": {
+      "message_id": 167057,
+      "slot": "2026-10-30T21:50",
+      "status": "sent"
+    },
+    "B0967WM727": {
+      "message_id": 167004,
+      "slot": "2026-10-29T22:20",
+      "status": "sent"
+    },
+    "B096XVDVH4": {
+      "message_id": 166974,
+      "slot": "2026-10-29T15:45",
+      "status": "sent"
+    },
+    "B09BNFVPVG": {
+      "message_id": 167049,
+      "slot": "2026-10-30T20:50",
+      "status": "sent"
+    },
+    "B09CZ8TQTM": {
+      "message_id": 166834,
+      "slot": "2026-10-27T13:15",
+      "status": "sent"
+    },
+    "B09DCV3CC2": {
+      "message_id": 166851,
+      "slot": "2026-10-27T17:30",
+      "status": "sent"
+    },
+    "B09DCXVC4H": {
+      "message_id": 166894,
+      "slot": "2026-10-28T13:00",
+      "status": "sent"
+    },
+    "B09DPLQ3RG": {
+      "message_id": 166841,
+      "slot": "2026-10-27T15:00",
+      "status": "sent"
+    },
+    "B09FGN6HP9": {
+      "message_id": 166815,
+      "slot": "2026-10-27T01:29-test",
+      "status": "sent"
+    },
+    "B09KLRSG71": {
+      "message_id": 166840,
+      "slot": "2026-10-27T14:45",
+      "status": "sent"
+    },
+    "B09KNFD4WS": {
+      "message_id": 166969,
+      "slot": "2026-10-29T14:30",
+      "status": "sent"
+    },
+    "B09MSJ454B": {
+      "message_id": 167043,
+      "slot": "2026-10-30T18:45",
+      "status": "sent"
+    },
+    "B09PD2XXR5": {
+      "message_id": 166849,
+      "slot": "2026-10-27T17:00",
+      "status": "sent"
+    },
+    "B09PFKSFFR": {
+      "message_id": 166926,
+      "slot": "2026-10-28T20:40",
+      "status": "sent"
+    },
+    "B09XRBGQWD": {
+      "message_id": 167031,
+      "slot": "2026-10-30T14:00",
+      "status": "sent"
+    },
+    "B0B2Q6KKHZ": {
+      "message_id": 166875,
+      "slot": "2026-10-27T22:20",
+      "status": "sent"
+    },
+    "B0B3D7ZWFS": {
+      "message_id": 167029,
+      "slot": "2026-10-30T13:30",
+      "status": "sent"
+    },
+    "B0B57J39DD": {
+      "message_id": 166829,
+      "slot": "2026-10-27T12:00",
+      "status": "sent"
+    },
+    "B0B99H5F55": {
+      "message_id": 166985,
+      "slot": "2026-10-29T18:45",
+      "status": "sent"
+    },
+    "B0BBTD77GX": {
+      "message_id": 167060,
+      "slot": "2026-10-30T22:20",
+      "status": "sent"
+    },
+    "B0BBTVBJYX": {
+      "message_id": 166819,
+      "slot": "2026-10-27T10:45",
+      "status": "sent"
+    },
+    "B0BDS9DC4F": {
+      "message_id": 167020,
+      "slot": "2026-10-30T11:15",
+      "status": "sent"
+    },
+    "B0BFQHTXYZ": {
+      "message_id": 167033,
+      "slot": "2026-10-30T14:30",
+      "status": "sent"
+    },
+    "B0BJPG2D2B": {
+      "message_id": 167001,
+      "slot": "2026-10-29T21:50",
+      "status": "sent"
+    },
+    "B0BL27BC6G": {
+      "message_id": 166842,
+      "slot": "2026-10-27T15:15",
+      "status": "sent"
+    },
+    "B0BN86WP79": {
+      "message_id": 166898,
+      "slot": "2026-10-28T14:00",
+      "status": "sent"
+    },
+    "B0BNGMG9RZ": {
+      "message_id": 166870,
+      "slot": "2026-10-27T21:30",
+      "status": "sent"
+    },
+    "B0BNGS6XYL": {
+      "message_id": 166893,
+      "slot": "2026-10-28T12:45",
+      "status": "sent"
+    },
+    "B0BR55ZKNV": {
+      "message_id": 166928,
+      "slot": "2026-10-28T21:00",
+      "status": "sent"
+    },
+    "B0BR5LY1X6": {
+      "message_id": 167061,
+      "slot": "2026-10-30T22:30",
+      "status": "sent"
+    },
+    "B0BRNJ4Z5V": {
+      "message_id": 166931,
+      "slot": "2026-10-28T21:30",
+      "status": "sent"
+    },
+    "B0BWJWR6P5": {
+      "message_id": 166929,
+      "slot": "2026-10-28T21:10",
+      "status": "sent"
+    },
+    "B0BYDMZ3LT": {
+      "message_id": 166817,
+      "slot": "2026-10-27T10:00",
+      "status": "sent"
+    },
+    "B0C28CD3BR": {
+      "message_id": 166933,
+      "slot": "2026-10-28T22:00",
+      "status": "sent"
+    },
+    "B0C8T1RR23": {
+      "message_id": 166871,
+      "slot": "2026-10-27T21:40",
+      "status": "sent"
+    },
+    "B0CHK3JCQF": {
+      "message_id": 166982,
+      "slot": "2026-10-29T18:00",
+      "status": "sent"
+    },
+    "B0CKFCZN1L": {
+      "message_id": 166888,
+      "slot": "2026-10-28T11:30",
+      "status": "sent"
+    },
+    "B0CKY3KF4K": {
+      "message_id": 166930,
+      "slot": "2026-10-28T21:20",
+      "status": "sent"
+    },
+    "B0CN2KSVW1": {
+      "message_id": 166831,
+      "slot": "2026-10-27T12:30",
+      "status": "sent"
+    },
+    "B0CNGS6HDY": {
+      "message_id": 166887,
+      "slot": "2026-10-28T11:15",
+      "status": "sent"
+    },
+    "B0CNMJQYC9": {
+      "message_id": 166900,
+      "slot": "2026-10-28T14:30",
+      "status": "sent"
+    },
+    "B0CNVR1RC3": {
+      "message_id": 166881,
+      "slot": "2026-10-27T23:20",
+      "status": "sent"
+    },
+    "B0CP5FXRZB": {
+      "message_id": 166973,
+      "slot": "2026-10-29T15:30",
+      "status": "sent"
+    },
+    "B0CP7WLWQY": {
+      "message_id": 166895,
+      "slot": "2026-10-28T13:15",
+      "status": "sent"
+    },
+    "B0CT93NX7P": {
+      "message_id": 166823,
+      "slot": "2026-10-27T11:45",
+      "status": "sent"
+    },
+    "B0CTVQVDMG": {
+      "message_id": 166882,
+      "slot": "2026-10-27T23:30",
+      "status": "sent"
+    },
+    "B0CVDCGT6W": {
+      "message_id": 166983,
+      "slot": "2026-10-29T18:15",
+      "status": "sent"
+    },
+    "B0CXGYCPXY": {
+      "message_id": 167066,
+      "slot": "2026-10-30T23:20",
+      "status": "sent"
+    },
+    "B0CY3TMG9K": {
+      "message_id": 166863,
+      "slot": "2026-10-27T20:20",
+      "status": "sent"
+    },
+    "B0CZTZNS3Y": {
+      "message_id": 166897,
+      "slot": "2026-10-28T13:45",
+      "status": "sent"
+    },
+    "B0D25BFGYD": {
+      "message_id": 167000,
+      "slot": "2026-10-29T21:40",
+      "status": "sent"
+    },
+    "B0D4C2Y291": {
+      "message_id": 166886,
+      "slot": "2026-10-28T11:00",
+      "status": "sent"
+    },
+    "B0D564BWNR": {
+      "message_id": 166846,
+      "slot": "2026-10-27T16:15",
+      "status": "sent"
+    },
+    "B0D7DKJNSY": {
+      "message_id": 166921,
+      "slot": "2026-10-28T19:45",
+      "status": "sent"
+    },
+    "B0D7MSW3H8": {
+      "message_id": 167054,
+      "slot": "2026-10-30T21:20",
+      "status": "sent"
+    },
+    "B0D8QRHQNL": {
+      "message_id": 166981,
+      "slot": "2026-10-29T17:45",
+      "status": "sent"
+    },
+    "B0D9QNZD19": {
+      "message_id": 167003,
+      "slot": "2026-10-29T22:10",
+      "status": "sent"
+    },
+    "B0DB6G12W7": {
+      "message_id": 166859,
+      "slot": "2026-10-27T19:30",
+      "status": "sent"
+    },
+    "B0DCB9C26S": {
+      "message_id": 167076,
+      "slot": "2026-10-31T09:45",
+      "status": "sent"
+    },
+    "B0DDPH9C4R": {
+      "message_id": 166955,
+      "slot": "2026-10-29T11:00",
+      "status": "sent"
+    },
+    "B0DF7PNNY3": {
+      "message_id": 166971,
+      "slot": "2026-10-29T15:00",
+      "status": "sent"
+    },
+    "B0DFB81517": {
+      "message_id": 167030,
+      "slot": "2026-10-30T13:45",
+      "status": "sent"
+    },
+    "B0DFYDTPMJ": {
+      "message_id": 166995,
+      "slot": "2026-10-29T20:50",
+      "status": "sent"
+    },
+    "B0DJQN5DJG": {
+      "message_id": 166997,
+      "slot": "2026-10-29T21:10",
+      "status": "sent"
+    },
+    "B0DK2BK635": {
+      "message_id": 166920,
+      "slot": "2026-10-28T19:30",
+      "status": "sent"
+    },
+    "B0DMNWQCFV": {
+      "message_id": 167044,
+      "slot": "2026-10-30T19:00",
+      "status": "sent"
+    },
+    "B0DN292JVP": {
+      "message_id": 166904,
+      "slot": "2026-10-28T15:30",
+      "status": "sent"
+    },
+    "B0DNG343M8": {
+      "message_id": 167055,
+      "slot": "2026-10-30T21:30",
+      "status": "sent"
+    },
+    "B0DP6RBNZF": {
+      "message_id": 166993,
+      "slot": "2026-10-29T20:30",
+      "status": "sent"
+    },
+    "B0DQPXTQDS": {
+      "message_id": 166903,
+      "slot": "2026-10-28T15:15",
+      "status": "sent"
+    },
+    "B0DSR64KZJ": {
+      "message_id": 167024,
+      "slot": "2026-10-30T12:15",
+      "status": "sent"
+    },
+    "B0DSYHJDX1": {
+      "message_id": 166891,
+      "slot": "2026-10-28T12:15",
+      "status": "sent"
+    },
+    "B0DT9JYLLC": {
+      "message_id": 166833,
+      "slot": "2026-10-27T13:00",
+      "status": "sent"
+    },
+    "B0DTTJVM43": {
+      "message_id": 166918,
+      "slot": "2026-10-28T19:00",
+      "status": "sent"
+    },
+    "B0DV5RRL9F": {
+      "message_id": 166937,
+      "slot": "2026-10-28T22:40",
+      "status": "sent"
+    },
+    "B0DVCF9G8H": {
+      "message_id": 167002,
+      "slot": "2026-10-29T22:00",
+      "status": "sent"
+    },
+    "B0DVCFJVSV": {
+      "message_id": 166884,
+      "slot": "2026-10-28T10:30",
+      "status": "sent"
+    },
+    "B0DWK6P2GH": {
+      "message_id": 166822,
+      "slot": "2026-10-27T11:30",
+      "status": "sent"
+    },
+    "B0DWL8T8NN": {
+      "message_id": 167021,
+      "slot": "2026-10-30T11:30",
+      "status": "sent"
+    },
+    "B0DZ77XFGQ": {
+      "message_id": 166832,
+      "slot": "2026-10-27T12:45",
+      "status": "sent"
+    },
+    "B0DZXDCXNL": {
+      "message_id": 166980,
+      "slot": "2026-10-29T17:30",
+      "status": "sent"
+    },
+    "B0F1953SXT": {
+      "message_id": 167063,
+      "slot": "2026-10-30T23:10",
+      "status": "sent"
+    },
+    "B0F2GGYSXY": {
+      "message_id": 166951,
+      "slot": "2026-10-29T10:00",
+      "status": "sent"
+    },
+    "B0F2XDPHFR": {
+      "message_id": 166899,
+      "slot": "2026-10-28T14:15",
+      "status": "sent"
+    },
+    "B0F3351CSQ": {
+      "message_id": 166992,
+      "slot": "2026-10-29T20:20",
+      "status": "sent"
+    },
+    "B0F33XWV69": {
+      "message_id": 166953,
+      "slot": "2026-10-29T10:30",
+      "status": "sent"
+    },
+    "B0F3JLZ9PP": {
+      "message_id": 166910,
+      "slot": "2026-10-28T17:00",
+      "status": "sent"
+    },
+    "B0F3N7GBD7": {
+      "message_id": 166975,
+      "slot": "2026-10-29T16:15",
+      "status": "sent"
+    },
+    "B0F44124PS": {
+      "message_id": 166907,
+      "slot": "2026-10-28T16:15",
+      "status": "sent"
+    },
+    "B0F4WMTW9C": {
+      "message_id": 167026,
+      "slot": "2026-10-30T12:45",
+      "status": "sent"
+    },
+    "B0F634G3C3": {
+      "message_id": 166967,
+      "slot": "2026-10-29T14:00",
+      "status": "sent"
+    },
+    "B0F6354BYN": {
+      "message_id": 166965,
+      "slot": "2026-10-29T13:30",
+      "status": "sent"
+    },
+    "B0F6C9DL12": {
+      "message_id": 166905,
+      "slot": "2026-10-28T15:45",
+      "status": "sent"
+    },
+    "B0F6WG3MSC": {
+      "message_id": 167010,
+      "slot": "2026-10-29T23:20",
+      "status": "sent"
+    },
+    "B0F8C2GJKQ": {
+      "message_id": 167042,
+      "slot": "2026-10-30T18:30",
+      "status": "sent"
+    },
+    "B0F8VNVTG3": {
+      "message_id": 166966,
+      "slot": "2026-10-29T13:45",
+      "status": "sent"
+    },
+    "B0F93PD2V7": {
+      "message_id": 166958,
+      "slot": "2026-10-29T11:45",
+      "status": "sent"
+    },
+    "B0F9B19W3P": {
+      "message_id": 167006,
+      "slot": "2026-10-29T22:40",
+      "status": "sent"
+    },
+    "B0FB3SNKRS": {
+      "message_id": 166914,
+      "slot": "2026-10-28T18:00",
+      "status": "sent"
+    },
+    "B0FBG4QYFZ": {
+      "message_id": 166879,
+      "slot": "2026-10-27T23:00",
+      "status": "sent"
+    },
+    "B0FC2RYMHC": {
+      "message_id": 167036,
+      "slot": "2026-10-30T15:15",
+      "status": "sent"
+    },
+    "B0FCFQCM4Y": {
+      "message_id": 166912,
+      "slot": "2026-10-28T17:30",
+      "status": "sent"
+    },
+    "B0FDLF3B17": {
+      "message_id": 166866,
+      "slot": "2026-10-27T20:50",
+      "status": "sent"
+    },
+    "B0FFCF6XSW": {
+      "message_id": 167025,
+      "slot": "2026-10-30T12:30",
+      "status": "sent"
+    },
+    "B0FFCQGDM2": {
+      "message_id": 166957,
+      "slot": "2026-10-29T11:30",
+      "status": "sent"
+    },
+    "B0FGCZ42DV": {
+      "message_id": 167032,
+      "slot": "2026-10-30T14:15",
+      "status": "sent"
+    },
+    "B0FHWGG5WV": {
+      "message_id": 166892,
+      "slot": "2026-10-28T12:30",
+      "status": "sent"
+    },
+    "B0FKHC557S": {
+      "message_id": 166996,
+      "slot": "2026-10-29T21:00",
+      "status": "sent"
+    },
+    "B0FL6PWX3F": {
+      "message_id": 166878,
+      "slot": "2026-10-27T22:50",
+      "status": "sent"
+    },
+    "B0FPFKWLCN": {
+      "message_id": 167045,
+      "slot": "2026-10-30T19:15",
+      "status": "sent"
+    },
+    "B0FPFSK5ZW": {
+      "message_id": 166913,
+      "slot": "2026-10-28T17:45",
+      "status": "sent"
+    },
+    "B0FTT4QP5H": {
+      "message_id": 167022,
+      "slot": "2026-10-30T11:45",
+      "status": "sent"
+    },
+    "B0FVF4BZC5": {
+      "message_id": 166909,
+      "slot": "2026-10-28T16:45",
+      "status": "sent"
+    },
+    "B0FVXYMRBB": {
+      "message_id": 166977,
+      "slot": "2026-10-29T16:45",
+      "status": "sent"
+    },
+    "B0FWBMR91T": {
+      "message_id": 166890,
+      "slot": "2026-10-28T12:00",
+      "status": "sent"
+    },
+    "B0FWQ1NZFJ": {
+      "message_id": 166868,
+      "slot": "2026-10-27T21:10",
+      "status": "sent"
+    },
+    "B0FX28K2VB": {
+      "message_id": 166873,
+      "slot": "2026-10-27T22:00",
+      "status": "sent"
+    },
+    "B0FXMRCQ3G": {
+      "message_id": 166856,
+      "slot": "2026-10-27T18:45",
+      "status": "sent"
+    },
+    "B0G11JRYTL": {
+      "message_id": 167046,
+      "slot": "2026-10-30T19:30",
+      "status": "sent"
+    },
+    "B0G1KBZY2L": {
+      "message_id": 166991,
+      "slot": "2026-10-29T20:10",
+      "status": "sent"
+    },
+    "B0G1LSZSX6": {
+      "message_id": 166927,
+      "slot": "2026-10-28T20:50",
+      "status": "sent"
+    },
+    "B0G1YBBR54": {
+      "message_id": 166956,
+      "slot": "2026-10-29T11:15",
+      "status": "sent"
+    },
+    "B0G29CBDFK": {
+      "message_id": 166872,
+      "slot": "2026-10-27T21:50",
+      "status": "sent"
+    },
+    "B0G2JJYN88": {
+      "message_id": 166987,
+      "slot": "2026-10-29T19:15",
+      "status": "sent"
+    },
+    "B0G5YQJT7H": {
+      "message_id": 166830,
+      "slot": "2026-10-27T12:15",
+      "status": "sent"
+    },
+    "B0GCH5B4LP": {
+      "message_id": 166998,
+      "slot": "2026-10-29T21:20",
+      "status": "sent"
+    },
+    "B0GCLN1HKM": {
+      "message_id": 166880,
+      "slot": "2026-10-27T23:10",
+      "status": "sent"
+    },
+    "B0GCMYSG14": {
+      "message_id": 166885,
+      "slot": "2026-10-28T10:45",
+      "status": "sent"
+    },
+    "B0GF3DZ8WF": {
+      "message_id": 166919,
+      "slot": "2026-10-28T19:15",
+      "status": "sent"
+    },
+    "B0GF3HXLNQ": {
+      "message_id": 166917,
+      "slot": "2026-10-28T18:45",
+      "status": "sent"
+    },
+    "B0GGZDC9WH": {
+      "message_id": 166940,
+      "slot": "2026-10-28T23:10",
+      "status": "sent"
+    },
+    "B0GHDPY2NJ": {
+      "message_id": 166954,
+      "slot": "2026-10-29T10:45",
+      "status": "sent"
+    },
+    "B0GHQHM3Z7": {
+      "message_id": 166874,
+      "slot": "2026-10-27T22:10",
+      "status": "sent"
+    },
+    "B0GKNYZXXB": {
+      "message_id": 167041,
+      "slot": "2026-10-30T18:15",
+      "status": "sent"
+    },
+    "B0GKVCZGJM": {
+      "message_id": 166861,
+      "slot": "2026-10-27T20:00",
+      "status": "sent"
+    },
+    "B0GKVHJQB4": {
+      "message_id": 166864,
+      "slot": "2026-10-27T20:30",
+      "status": "sent"
+    },
+    "B0GKVKT87N": {
+      "message_id": 166860,
+      "slot": "2026-10-27T19:45",
+      "status": "sent"
+    },
+    "B0GL28PKDK": {
+      "message_id": 166988,
+      "slot": "2026-10-29T19:30",
+      "status": "sent"
+    },
+    "B0GL2JK4GX": {
+      "message_id": 166865,
+      "slot": "2026-10-27T20:40",
+      "status": "sent"
+    },
+    "B0GLJGQZHV": {
+      "message_id": 166922,
+      "slot": "2026-10-28T20:00",
+      "status": "sent"
+    },
+    "B0GPX8629T": {
+      "message_id": 166901,
+      "slot": "2026-10-28T14:45",
+      "status": "sent"
+    },
+    "B0GTR84GPV": {
+      "message_id": 166989,
+      "slot": "2026-10-29T19:45",
+      "status": "sent"
+    },
+    "B0GTVH4JGR": {
+      "message_id": 166843,
+      "slot": "2026-10-27T15:30",
+      "status": "sent"
+    },
+    "B0GVMRBZPW": {
+      "message_id": 167039,
+      "slot": "2026-10-30T17:45",
+      "status": "sent"
+    },
+    "B0GVV2SRGV": {
+      "message_id": 166986,
+      "slot": "2026-10-29T19:00",
+      "status": "sent"
+    },
+    "B0GW3SR86G": {
+      "message_id": 166979,
+      "slot": "2026-10-29T17:15",
+      "status": "sent"
+    },
+    "B0GY8XXMQZ": {
+      "message_id": 166938,
+      "slot": "2026-10-28T22:50",
+      "status": "sent"
+    },
+    "B0GZPHJRZQ": {
+      "message_id": 166896,
+      "slot": "2026-10-28T13:30",
+      "status": "sent"
+    },
+    "B0H1HQ266B": {
+      "message_id": 166916,
+      "slot": "2026-10-28T18:30",
+      "status": "sent"
+    },
+    "B0H1XTDJ6R": {
+      "message_id": 166883,
+      "slot": "2026-10-28T09:15",
+      "status": "sent"
+    },
+    "B0H3P6YDRB": {
+      "message_id": 167034,
+      "slot": "2026-10-30T14:45",
+      "status": "sent"
+    },
+    "B0H45NGKDY": {
+      "message_id": 166990,
+      "slot": "2026-10-29T20:00",
+      "status": "sent"
+    },
+    "B0H45XGF65": {
+      "message_id": 167028,
+      "slot": "2026-10-30T13:15",
+      "status": "sent"
+    },
+    "B0H4KL72TS": {
+      "message_id": 166867,
+      "slot": "2026-10-27T21:00",
+      "status": "sent"
+    },
+    "B0H4LB6C7P": {
+      "message_id": 166999,
+      "slot": "2026-10-29T21:30",
+      "status": "sent"
+    },
+    "B0H6GD47Y5": {
+      "message_id": 166941,
+      "slot": "2026-10-28T23:20",
+      "status": "sent"
+    },
+    "B0H7C3MPJ2": {
+      "message_id": 166915,
+      "slot": "2026-10-28T18:15",
+      "status": "sent"
+    },
+    "B0H87NB4X9": {
+      "message_id": 166911,
+      "slot": "2026-10-28T17:15",
+      "status": "sent"
+    },
+    "B0H97YFP68": {
+      "message_id": 166984,
+      "slot": "2026-10-29T18:30",
+      "status": "sent"
+    },
+    "B0H9KTXKTW": {
+      "message_id": 166850,
+      "slot": "2026-10-27T17:15",
+      "status": "sent"
+    },
+    "B0H9LML7HZ": {
+      "message_id": 166858,
+      "slot": "2026-10-27T19:15",
+      "status": "sent"
+    },
+    "B0H9LQ6TFM": {
+      "message_id": 166855,
+      "slot": "2026-10-27T18:30",
+      "status": "sent"
+    },
+    "B0H9LT2JPP": {
+      "message_id": 166857,
+      "slot": "2026-10-27T19:00",
+      "status": "sent"
+    },
+    "B0HBP3MDJP": {
+      "message_id": 166949,
+      "slot": "2026-10-29T09:30",
+      "status": "sent"
+    },
+    "B0HC3K7N43": {
+      "message_id": 167007,
+      "slot": "2026-10-29T22:50",
+      "status": "sent"
+    },
+    "B0HCZGK4S3": {
+      "message_id": 167035,
+      "slot": "2026-10-30T15:00",
+      "status": "sent"
+    },
+    "B0HDTLKCYL": {
+      "message_id": 166952,
+      "slot": "2026-10-29T10:15",
+      "status": "sent"
+    },
+    "B0HG1SVK86": {
+      "message_id": 166972,
+      "slot": "2026-10-29T15:15",
+      "status": "sent"
+    },
+    "B0HH98QRGR": {
+      "message_id": 167023,
+      "slot": "2026-10-30T12:00",
+      "status": "sent"
+    },
+    "B0HKFNM6J6": {
+      "message_id": 166950,
+      "slot": "2026-10-29T09:45",
+      "status": "sent"
+    },
+    "B0HMD784S3": {
+      "message_id": 166939,
+      "slot": "2026-10-28T23:00",
+      "status": "sent"
+    },
+    "B0HMKN92WL": {
+      "message_id": 167079,
+      "slot": "2026-10-31T10:15",
+      "status": "sent"
+    },
+    "B019V9M32I": {
+      "message_id": 167072,
+      "slot": "2026-10-31T09:15",
+      "status": "sent"
+    },
+    "B0HJ4Q6J7N": {
+      "message_id": 167073,
+      "slot": "2026-10-31T09:30",
+      "status": "sent"
+    },
+    "B0H5VVFS27": {
+      "message_id": 167074,
+      "slot": "2026-10-31T09:45",
+      "status": "sent"
+    },
+    "B0HF88CKKN": {
+      "message_id": 167075,
+      "slot": "2026-10-31T10:00",
+      "status": "sent"
+    },
+    "B0H4L5HVH9": {
+      "message_id": 167078,
+      "slot": "2026-10-31T10:15",
+      "status": "sent"
+    }
+  },
+  "slots": {
+    "2026-10-27T01:29-test": "B09FGN6HP9",
+    "2026-10-27T09:15": "B011KE2QLK",
+    "2026-10-27T10:00": "B0BYDMZ3LT",
+    "2026-10-27T10:30": "B00F35J9TK",
+    "2026-10-27T10:45": "B0BBTVBJYX",
+    "2026-10-27T11:00": "B073Y77LCG",
+    "2026-10-27T11:15": "B086Q2Q2HK",
+    "2026-10-27T11:30": "B0DWK6P2GH",
+    "2026-10-27T11:45": "B0CT93NX7P",
+    "2026-10-27T12:00": "B0B57J39DD",
+    "2026-10-27T12:15": "B0G5YQJT7H",
+    "2026-10-27T12:30": "B0CN2KSVW1",
+    "2026-10-27T12:45": "B0DZ77XFGQ",
+    "2026-10-27T13:00": "B0DT9JYLLC",
+    "2026-10-27T13:15": "B09CZ8TQTM",
+    "2026-10-27T13:30": "B08DK5474W",
+    "2026-10-27T13:45": "B01D02VL16",
+    "2026-10-27T14:00": "B01HT0FREW",
+    "2026-10-27T14:15": "B07NY457J4",
+    "2026-10-27T14:30": "B00SX4N976",
+    "2026-10-27T14:45": "B09KLRSG71",
+    "2026-10-27T15:00": "B09DPLQ3RG",
+    "2026-10-27T15:15": "B0BL27BC6G",
+    "2026-10-27T15:30": "B0GTVH4JGR",
+    "2026-10-27T15:45": "B075BPYQ6R",
+    "2026-10-27T16:00": "B08CL61986",
+    "2026-10-27T16:15": "B0D564BWNR",
+    "2026-10-27T16:30": "B00AE41DIU",
+    "2026-10-27T16:45": "B07MGPVZX4",
+    "2026-10-27T17:00": "B09PD2XXR5",
+    "2026-10-27T17:15": "B0H9KTXKTW",
+    "2026-10-27T17:30": "B09DCV3CC2",
+    "2026-10-27T17:45": "B08CXJVPCG",
+    "2026-10-27T18:00": "B075MGFZV4",
+    "2026-10-27T18:15": "B001O8MI2K",
+    "2026-10-27T18:30": "B0H9LQ6TFM",
+    "2026-10-27T18:45": "B0FXMRCQ3G",
+    "2026-10-27T19:00": "B0H9LT2JPP",
+    "2026-10-27T19:15": "B0H9LML7HZ",
+    "2026-10-27T19:30": "B0DB6G12W7",
+    "2026-10-27T19:45": "B0GKVKT87N",
+    "2026-10-27T20:00": "B0GKVCZGJM",
+    "2026-10-27T20:10": "B077MBJHTJ",
+    "2026-10-27T20:20": "B0CY3TMG9K",
+    "2026-10-27T20:30": "B0GKVHJQB4",
+    "2026-10-27T20:40": "B0GL2JK4GX",
+    "2026-10-27T20:50": "B0FDLF3B17",
+    "2026-10-27T21:00": "B0H4KL72TS",
+    "2026-10-27T21:10": "B0FWQ1NZFJ",
+    "2026-10-27T21:20": "B004CY8CEG",
+    "2026-10-27T21:30": "B0BNGMG9RZ",
+    "2026-10-27T21:40": "B0C8T1RR23",
+    "2026-10-27T21:50": "B0G29CBDFK",
+    "2026-10-27T22:00": "B0FX28K2VB",
+    "2026-10-27T22:10": "B0GHQHM3Z7",
+    "2026-10-27T22:20": "B0B2Q6KKHZ",
+    "2026-10-27T22:30": "B08R4ZPRV3",
+    "2026-10-27T22:40": "B0748MM3ZM",
+    "2026-10-27T22:50": "B0FL6PWX3F",
+    "2026-10-27T23:00": "B0FBG4QYFZ",
+    "2026-10-27T23:10": "B0GCLN1HKM",
+    "2026-10-27T23:20": "B0CNVR1RC3",
+    "2026-10-27T23:30": "B0CTVQVDMG",
+    "2026-10-28T09:15": "B0H1XTDJ6R",
+    "2026-10-28T10:30": "B0DVCFJVSV",
+    "2026-10-28T10:45": "B0GCMYSG14",
+    "2026-10-28T11:00": "B0D4C2Y291",
+    "2026-10-28T11:15": "B0CNGS6HDY",
+    "2026-10-28T11:30": "B0CKFCZN1L",
+    "2026-10-28T11:45": "B082SWM46Z",
+    "2026-10-28T12:00": "B0FWBMR91T",
+    "2026-10-28T12:15": "B0DSYHJDX1",
+    "2026-10-28T12:30": "B0FHWGG5WV",
+    "2026-10-28T12:45": "B0BNGS6XYL",
+    "2026-10-28T13:00": "B09DCXVC4H",
+    "2026-10-28T13:15": "B0CP7WLWQY",
+    "2026-10-28T13:30": "B0GZPHJRZQ",
+    "2026-10-28T13:45": "B0CZTZNS3Y",
+    "2026-10-28T14:00": "B0BN86WP79",
+    "2026-10-28T14:15": "B0F2XDPHFR",
+    "2026-10-28T14:30": "B0CNMJQYC9",
+    "2026-10-28T14:45": "B0GPX8629T",
+    "2026-10-28T15:00": "B08QNCZXSP",
+    "2026-10-28T15:15": "B0DQPXTQDS",
+    "2026-10-28T15:30": "B0DN292JVP",
+    "2026-10-28T15:45": "B0F6C9DL12",
+    "2026-10-28T16:00": "B07ZPT5L8R",
+    "2026-10-28T16:15": "B0F44124PS",
+    "2026-10-28T16:30": "B07KZRKYM6",
+    "2026-10-28T16:45": "B0FVF4BZC5",
+    "2026-10-28T17:00": "B0F3JLZ9PP",
+    "2026-10-28T17:15": "B0H87NB4X9",
+    "2026-10-28T17:30": "B0FCFQCM4Y",
+    "2026-10-28T17:45": "B0FPFSK5ZW",
+    "2026-10-28T18:00": "B0FB3SNKRS",
+    "2026-10-28T18:15": "B0H7C3MPJ2",
+    "2026-10-28T18:30": "B0H1HQ266B",
+    "2026-10-28T18:45": "B0GF3HXLNQ",
+    "2026-10-28T19:00": "B0DTTJVM43",
+    "2026-10-28T19:15": "B0GF3DZ8WF",
+    "2026-10-28T19:30": "B0DK2BK635",
+    "2026-10-28T19:45": "B0D7DKJNSY",
+    "2026-10-28T20:00": "B0GLJGQZHV",
+    "2026-10-28T20:10": "B08BZPXCKD",
+    "2026-10-28T20:20": "B07FM6SKMG",
+    "2026-10-28T20:30": "B07JFDT4R2",
+    "2026-10-28T20:40": "B09PFKSFFR",
+    "2026-10-28T20:50": "B0G1LSZSX6",
+    "2026-10-28T21:00": "B0BR55ZKNV",
+    "2026-10-28T21:10": "B0BWJWR6P5",
+    "2026-10-28T21:20": "B0CKY3KF4K",
+    "2026-10-28T21:30": "B0BRNJ4Z5V",
+    "2026-10-28T21:40": "B07YYP3CYM",
+    "2026-10-28T22:00": "B0C28CD3BR",
+    "2026-10-28T22:10": "B01MAWS86N",
+    "2026-10-28T22:20": "B085S2147W",
+    "2026-10-28T22:30": "B08KG1SXCZ",
+    "2026-10-28T22:40": "B0DV5RRL9F",
+    "2026-10-28T22:50": "B0GY8XXMQZ",
+    "2026-10-28T23:00": "B0HMD784S3",
+    "2026-10-28T23:10": "B0GGZDC9WH",
+    "2026-10-28T23:20": "B0H6GD47Y5",
+    "2026-10-29T09:30": "B0HBP3MDJP",
+    "2026-10-29T09:45": "B0HKFNM6J6",
+    "2026-10-29T10:00": "B0F2GGYSXY",
+    "2026-10-29T10:15": "B0HDTLKCYL",
+    "2026-10-29T10:30": "B0F33XWV69",
+    "2026-10-29T10:45": "B0GHDPY2NJ",
+    "2026-10-29T11:00": "B0DDPH9C4R",
+    "2026-10-29T11:15": "B0G1YBBR54",
+    "2026-10-29T11:30": "B0FFCQGDM2",
+    "2026-10-29T11:45": "B0F93PD2V7",
+    "2026-10-29T13:30": "B0F6354BYN",
+    "2026-10-29T13:45": "B0F8VNVTG3",
+    "2026-10-29T14:00": "B0F634G3C3",
+    "2026-10-29T14:15": "B01MTYDSOO",
+    "2026-10-29T14:30": "B09KNFD4WS",
+    "2026-10-29T14:45": "B0817LMPDX",
+    "2026-10-29T15:00": "B0DF7PNNY3",
+    "2026-10-29T15:15": "B0HG1SVK86",
+    "2026-10-29T15:30": "B0CP5FXRZB",
+    "2026-10-29T15:45": "B096XVDVH4",
+    "2026-10-29T16:15": "B0F3N7GBD7",
+    "2026-10-29T16:30": "B086177CR3",
+    "2026-10-29T16:45": "B0FVXYMRBB",
+    "2026-10-29T17:00": "B08BWYVCZ9",
+    "2026-10-29T17:15": "B0GW3SR86G",
+    "2026-10-29T17:30": "B0DZXDCXNL",
+    "2026-10-29T17:45": "B0D8QRHQNL",
+    "2026-10-29T18:00": "B0CHK3JCQF",
+    "2026-10-29T18:15": "B0CVDCGT6W",
+    "2026-10-29T18:30": "B0H97YFP68",
+    "2026-10-29T18:45": "B0B99H5F55",
+    "2026-10-29T19:00": "B0GVV2SRGV",
+    "2026-10-29T19:15": "B0G2JJYN88",
+    "2026-10-29T19:30": "B0GL28PKDK",
+    "2026-10-29T19:45": "B0GTR84GPV",
+    "2026-10-29T20:00": "B0H45NGKDY",
+    "2026-10-29T20:10": "B0G1KBZY2L",
+    "2026-10-29T20:20": "B0F3351CSQ",
+    "2026-10-29T20:30": "B0DP6RBNZF",
+    "2026-10-29T20:40": "B07TXZD22Q",
+    "2026-10-29T20:50": "B0DFYDTPMJ",
+    "2026-10-29T21:00": "B0FKHC557S",
+    "2026-10-29T21:10": "B0DJQN5DJG",
+    "2026-10-29T21:20": "B0GCH5B4LP",
+    "2026-10-29T21:30": "B0H4LB6C7P",
+    "2026-10-29T21:40": "B0D25BFGYD",
+    "2026-10-29T21:50": "B0BJPG2D2B",
+    "2026-10-29T22:00": "B0DVCF9G8H",
+    "2026-10-29T22:10": "B0D9QNZD19",
+    "2026-10-29T22:20": "B0967WM727",
+    "2026-10-29T22:30": "B077D1V7SJ",
+    "2026-10-29T22:40": "B0F9B19W3P",
+    "2026-10-29T22:50": "B0HC3K7N43",
+    "2026-10-29T23:00": "B084MLV42X",
+    "2026-10-29T23:10": "B08JZ6MPF3",
+    "2026-10-29T23:20": "B0F6WG3MSC",
+    "2026-10-29T23:30": "B00E5ZY7PK",
+    "2026-10-30T09:30": "B07Q619ZKS",
+    "2026-10-30T11:00": "B08224FZKW",
+    "2026-10-30T11:15": "B0BDS9DC4F",
+    "2026-10-30T11:30": "B0DWL8T8NN",
+    "2026-10-30T11:45": "B0FTT4QP5H",
+    "2026-10-30T12:00": "B0HH98QRGR",
+    "2026-10-30T12:15": "B0DSR64KZJ",
+    "2026-10-30T12:30": "B0FFCF6XSW",
+    "2026-10-30T12:45": "B0F4WMTW9C",
+    "2026-10-30T13:00": "B087TXHLVQ",
+    "2026-10-30T13:15": "B0H45XGF65",
+    "2026-10-30T13:30": "B0B3D7ZWFS",
+    "2026-10-30T13:45": "B0DFB81517",
+    "2026-10-30T14:00": "B09XRBGQWD",
+    "2026-10-30T14:15": "B0FGCZ42DV",
+    "2026-10-30T14:30": "B0BFQHTXYZ",
+    "2026-10-30T14:45": "B0H3P6YDRB",
+    "2026-10-30T15:00": "B0HCZGK4S3",
+    "2026-10-30T15:15": "B0FC2RYMHC",
+    "2026-10-30T15:30": "B08953DL1W",
+    "2026-10-30T17:30": "B08WWF2VN1",
+    "2026-10-30T17:45": "B0GVMRBZPW",
+    "2026-10-30T18:00": "B005OJ7NQ6",
+    "2026-10-30T18:15": "B0GKNYZXXB",
+    "2026-10-30T18:30": "B0F8C2GJKQ",
+    "2026-10-30T18:45": "B09MSJ454B",
+    "2026-10-30T19:00": "B0DMNWQCFV",
+    "2026-10-30T19:15": "B0FPFKWLCN",
+    "2026-10-30T19:30": "B0G11JRYTL",
+    "2026-10-30T20:50": "B09BNFVPVG",
+    "2026-10-30T21:00": "B08BC6M893",
+    "2026-10-30T21:10": "B00GQP1034",
+    "2026-10-30T21:20": "B0D7MSW3H8",
+    "2026-10-30T21:30": "B0DNG343M8",
+    "2026-10-30T21:40": "B07883BNTV",
+    "2026-10-30T21:50": "B08XBSLSZB",
+    "2026-10-30T22:00": "B08T6DB8P4",
+    "2026-10-30T22:10": "B07BKW4NZB",
+    "2026-10-30T22:20": "B0BBTD77GX",
+    "2026-10-30T22:30": "B0BR5LY1X6",
+    "2026-10-30T22:40": "B08VWTY5G3",
+    "2026-10-30T23:10": "B0F1953SXT",
+    "2026-10-30T23:20": "B0CXGYCPXY",
+    "2026-10-30T23:30": "B08CXVQ3KZ",
+    "2026-10-31T09:45": "B0DCB9C26S",
+    "2026-10-31T10:00": "B07R9ZHX96",
+    "2026-10-31T10:15": "B0HMKN92WL"
   }
- },
- "slots": {
-  "2026-10-27T01:29-test": "B09FGN6HP9",
-  "2026-10-27T09:15": "B011KE2QLK",
-  "2026-10-27T10:00": "B0BYDMZ3LT",
-  "2026-10-27T10:30": "B00F35J9TK",
-  "2026-10-27T10:45": "B0BBTVBJYX",
-  "2026-10-27T11:00": "B073Y77LCG",
-  "2026-10-27T11:15": "B086Q2Q2HK",
-  "2026-10-27T11:30": "B0DWK6P2GH",
-  "2026-10-27T11:45": "B0CT93NX7P",
-  "2026-10-27T12:00": "B0B57J39DD",
-  "2026-10-27T12:15": "B0G5YQJT7H",
-  "2026-10-27T12:30": "B0CN2KSVW1",
-  "2026-10-27T12:45": "B0DZ77XFGQ",
-  "2026-10-27T13:00": "B0DT9JYLLC",
-  "2026-10-27T13:15": "B09CZ8TQTM",
-  "2026-10-27T13:30": "B08DK5474W",
-  "2026-10-27T13:45": "B01D02VL16",
-  "2026-10-27T14:00": "B01HT0FREW",
-  "2026-10-27T14:15": "B07NY457J4",
-  "2026-10-27T14:30": "B00SX4N976",
-  "2026-10-27T14:45": "B09KLRSG71",
-  "2026-10-27T15:00": "B09DPLQ3RG",
-  "2026-10-27T15:15": "B0BL27BC6G",
-  "2026-10-27T15:30": "B0GTVH4JGR",
-  "2026-10-27T15:45": "B075BPYQ6R",
-  "2026-10-27T16:00": "B08CL61986",
-  "2026-10-27T16:15": "B0D564BWNR",
-  "2026-10-27T16:30": "B00AE41DIU",
-  "2026-10-27T16:45": "B07MGPVZX4",
-  "2026-10-27T17:00": "B09PD2XXR5",
-  "2026-10-27T17:15": "B0H9KTXKTW",
-  "2026-10-27T17:30": "B09DCV3CC2",
-  "2026-10-27T17:45": "B08CXJVPCG",
-  "2026-10-27T18:00": "B075MGFZV4",
-  "2026-10-27T18:15": "B001O8MI2K",
-  "2026-10-27T18:30": "B0H9LQ6TFM",
-  "2026-10-27T18:45": "B0FXMRCQ3G",
-  "2026-10-27T19:00": "B0H9LT2JPP",
-  "2026-10-27T19:15": "B0H9LML7HZ",
-  "2026-10-27T19:30": "B0DB6G12W7",
-  "2026-10-27T19:45": "B0GKVKT87N",
-  "2026-10-27T20:00": "B0GKVCZGJM",
-  "2026-10-27T20:10": "B077MBJHTJ",
-  "2026-10-27T20:20": "B0CY3TMG9K",
-  "2026-10-27T20:30": "B0GKVHJQB4",
-  "2026-10-27T20:40": "B0GL2JK4GX",
-  "2026-10-27T20:50": "B0FDLF3B17",
-  "2026-10-27T21:00": "B0H4KL72TS",
-  "2026-10-27T21:10": "B0FWQ1NZFJ",
-  "2026-10-27T21:20": "B004CY8CEG",
-  "2026-10-27T21:30": "B0BNGMG9RZ",
-  "2026-10-27T21:40": "B0C8T1RR23",
-  "2026-10-27T21:50": "B0G29CBDFK",
-  "2026-10-27T22:00": "B0FX28K2VB",
-  "2026-10-27T22:10": "B0GHQHM3Z7",
-  "2026-10-27T22:20": "B0B2Q6KKHZ",
-  "2026-10-27T22:30": "B08R4ZPRV3",
-  "2026-10-27T22:40": "B0748MM3ZM",
-  "2026-10-27T22:50": "B0FL6PWX3F",
-  "2026-10-27T23:00": "B0FBG4QYFZ",
-  "2026-10-27T23:10": "B0GCLN1HKM",
-  "2026-10-27T23:20": "B0CNVR1RC3",
-  "2026-10-27T23:30": "B0CTVQVDMG",
-  "2026-10-28T09:15": "B0H1XTDJ6R",
-  "2026-10-28T10:30": "B0DVCFJVSV",
-  "2026-10-28T10:45": "B0GCMYSG14",
-  "2026-10-28T11:00": "B0D4C2Y291",
-  "2026-10-28T11:15": "B0CNGS6HDY",
-  "2026-10-28T11:30": "B0CKFCZN1L",
-  "2026-10-28T11:45": "B082SWM46Z",
-  "2026-10-28T12:00": "B0FWBMR91T",
-  "2026-10-28T12:15": "B0DSYHJDX1",
-  "2026-10-28T12:30": "B0FHWGG5WV",
-  "2026-10-28T12:45": "B0BNGS6XYL",
-  "2026-10-28T13:00": "B09DCXVC4H",
-  "2026-10-28T13:15": "B0CP7WLWQY",
-  "2026-10-28T13:30": "B0GZPHJRZQ",
-  "2026-10-28T13:45": "B0CZTZNS3Y",
-  "2026-10-28T14:00": "B0BN86WP79",
-  "2026-10-28T14:15": "B0F2XDPHFR",
-  "2026-10-28T14:30": "B0CNMJQYC9",
-  "2026-10-28T14:45": "B0GPX8629T",
-  "2026-10-28T15:00": "B08QNCZXSP",
-  "2026-10-28T15:15": "B0DQPXTQDS",
-  "2026-10-28T15:30": "B0DN292JVP",
-  "2026-10-28T15:45": "B0F6C9DL12",
-  "2026-10-28T16:00": "B07ZPT5L8R",
-  "2026-10-28T16:15": "B0F44124PS",
-  "2026-10-28T16:30": "B07KZRKYM6",
-  "2026-10-28T16:45": "B0FVF4BZC5",
-  "2026-10-28T17:00": "B0F3JLZ9PP",
-  "2026-10-28T17:15": "B0H87NB4X9",
-  "2026-10-28T17:30": "B0FCFQCM4Y",
-  "2026-10-28T17:45": "B0FPFSK5ZW",
-  "2026-10-28T18:00": "B0FB3SNKRS",
-  "2026-10-28T18:15": "B0H7C3MPJ2",
-  "2026-10-28T18:30": "B0H1HQ266B",
-  "2026-10-28T18:45": "B0GF3HXLNQ",
-  "2026-10-28T19:00": "B0DTTJVM43",
-  "2026-10-28T19:15": "B0GF3DZ8WF",
-  "2026-10-28T19:30": "B0DK2BK635",
-  "2026-10-28T19:45": "B0D7DKJNSY",
-  "2026-10-28T20:00": "B0GLJGQZHV",
-  "2026-10-28T20:10": "B08BZPXCKD",
-  "2026-10-28T20:20": "B07FM6SKMG",
-  "2026-10-28T20:30": "B07JFDT4R2",
-  "2026-10-28T20:40": "B09PFKSFFR",
-  "2026-10-28T20:50": "B0G1LSZSX6",
-  "2026-10-28T21:00": "B0BR55ZKNV",
-  "2026-10-28T21:10": "B0BWJWR6P5",
-  "2026-10-28T21:20": "B0CKY3KF4K",
-  "2026-10-28T21:30": "B0BRNJ4Z5V",
-  "2026-10-28T21:40": "B07YYP3CYM",
-  "2026-10-28T22:00": "B0C28CD3BR",
-  "2026-10-28T22:10": "B01MAWS86N",
-  "2026-10-28T22:20": "B085S2147W",
-  "2026-10-28T22:30": "B08KG1SXCZ",
-  "2026-10-28T22:40": "B0DV5RRL9F",
-  "2026-10-28T22:50": "B0GY8XXMQZ",
-  "2026-10-28T23:00": "B0HMD784S3",
-  "2026-10-28T23:10": "B0GGZDC9WH",
-  "2026-10-28T23:20": "B0H6GD47Y5",
-  "2026-10-29T09:30": "B0HBP3MDJP",
-  "2026-10-29T09:45": "B0HKFNM6J6",
-  "2026-10-29T10:00": "B0F2GGYSXY",
-  "2026-10-29T10:15": "B0HDTLKCYL",
-  "2026-10-29T10:30": "B0F33XWV69",
-  "2026-10-29T10:45": "B0GHDPY2NJ",
-  "2026-10-29T11:00": "B0DDPH9C4R",
-  "2026-10-29T11:15": "B0G1YBBR54",
-  "2026-10-29T11:30": "B0FFCQGDM2",
-  "2026-10-29T11:45": "B0F93PD2V7",
-  "2026-10-29T13:30": "B0F6354BYN",
-  "2026-10-29T13:45": "B0F8VNVTG3",
-  "2026-10-29T14:00": "B0F634G3C3",
-  "2026-10-29T14:15": "B01MTYDSOO",
-  "2026-10-29T14:30": "B09KNFD4WS",
-  "2026-10-29T14:45": "B0817LMPDX",
-  "2026-10-29T15:00": "B0DF7PNNY3",
-  "2026-10-29T15:15": "B0HG1SVK86",
-  "2026-10-29T15:30": "B0CP5FXRZB",
-  "2026-10-29T15:45": "B096XVDVH4",
-  "2026-10-29T16:15": "B0F3N7GBD7",
-  "2026-10-29T16:30": "B086177CR3",
-  "2026-10-29T16:45": "B0FVXYMRBB",
-  "2026-10-29T17:00": "B08BWYVCZ9",
-  "2026-10-29T17:15": "B0GW3SR86G",
-  "2026-10-29T17:30": "B0DZXDCXNL",
-  "2026-10-29T17:45": "B0D8QRHQNL",
-  "2026-10-29T18:00": "B0CHK3JCQF",
-  "2026-10-29T18:15": "B0CVDCGT6W",
-  "2026-10-29T18:30": "B0H97YFP68",
-  "2026-10-29T18:45": "B0B99H5F55",
-  "2026-10-29T19:00": "B0GVV2SRGV",
-  "2026-10-29T19:15": "B0G2JJYN88",
-  "2026-10-29T19:30": "B0GL28PKDK",
-  "2026-10-29T19:45": "B0GTR84GPV",
-  "2026-10-29T20:00": "B0H45NGKDY",
-  "2026-10-29T20:10": "B0G1KBZY2L",
-  "2026-10-29T20:20": "B0F3351CSQ",
-  "2026-10-29T20:30": "B0DP6RBNZF",
-  "2026-10-29T20:40": "B07TXZD22Q",
-  "2026-10-29T20:50": "B0DFYDTPMJ",
-  "2026-10-29T21:00": "B0FKHC557S",
-  "2026-10-29T21:10": "B0DJQN5DJG",
-  "2026-10-29T21:20": "B0GCH5B4LP",
-  "2026-10-29T21:30": "B0H4LB6C7P",
-  "2026-10-29T21:40": "B0D25BFGYD",
-  "2026-10-29T21:50": "B0BJPG2D2B",
-  "2026-10-29T22:00": "B0DVCF9G8H",
-  "2026-10-29T22:10": "B0D9QNZD19",
-  "2026-10-29T22:20": "B0967WM727",
-  "2026-10-29T22:30": "B077D1V7SJ",
-  "2026-10-29T22:40": "B0F9B19W3P",
-  "2026-10-29T22:50": "B0HC3K7N43",
-  "2026-10-29T23:00": "B084MLV42X",
-  "2026-10-29T23:10": "B08JZ6MPF3",
-  "2026-10-29T23:20": "B0F6WG3MSC",
-  "2026-10-29T23:30": "B00E5ZY7PK",
-  "2026-10-30T09:30": "B07Q619ZKS",
-  "2026-10-30T11:00": "B08224FZKW",
-  "2026-10-30T11:15": "B0BDS9DC4F",
-  "2026-10-30T11:30": "B0DWL8T8NN",
-  "2026-10-30T11:45": "B0FTT4QP5H",
-  "2026-10-30T12:00": "B0HH98QRGR",
-  "2026-10-30T12:15": "B0DSR64KZJ",
-  "2026-10-30T12:30": "B0FFCF6XSW",
-  "2026-10-30T12:45": "B0F4WMTW9C",
-  "2026-10-30T13:00": "B087TXHLVQ",
-  "2026-10-30T13:15": "B0H45XGF65",
-  "2026-10-30T13:30": "B0B3D7ZWFS",
-  "2026-10-30T13:45": "B0DFB81517",
-  "2026-10-30T14:00": "B09XRBGQWD",
-  "2026-10-30T14:15": "B0FGCZ42DV",
-  "2026-10-30T14:30": "B0BFQHTXYZ",
-  "2026-10-30T14:45": "B0H3P6YDRB",
-  "2026-10-30T15:00": "B0HCZGK4S3",
-  "2026-10-30T15:15": "B0FC2RYMHC",
-  "2026-10-30T15:30": "B08953DL1W",
-  "2026-10-30T17:30": "B08WWF2VN1",
-  "2026-10-30T17:45": "B0GVMRBZPW",
-  "2026-10-30T18:00": "B005OJ7NQ6",
-  "2026-10-30T18:15": "B0GKNYZXXB",
-  "2026-10-30T18:30": "B0F8C2GJKQ",
-  "2026-10-30T18:45": "B09MSJ454B",
-  "2026-10-30T19:00": "B0DMNWQCFV",
-  "2026-10-30T19:15": "B0FPFKWLCN",
-  "2026-10-30T19:30": "B0G11JRYTL",
-  "2026-10-30T20:50": "B09BNFVPVG",
-  "2026-10-30T21:00": "B08BC6M893",
-  "2026-10-30T21:10": "B00GQP1034",
-  "2026-10-30T21:20": "B0D7MSW3H8",
-  "2026-10-30T21:30": "B0DNG343M8",
-  "2026-10-30T21:40": "B07883BNTV",
-  "2026-10-30T21:50": "B08XBSLSZB",
-  "2026-10-30T22:00": "B08T6DB8P4",
-  "2026-10-30T22:10": "B07BKW4NZB",
-  "2026-10-30T22:20": "B0BBTD77GX",
-  "2026-10-30T22:30": "B0BR5LY1X6",
-  "2026-10-30T22:40": "B08VWTY5G3",
-  "2026-10-30T23:10": "B0F1953SXT",
-  "2026-10-30T23:20": "B0CXGYCPXY",
-  "2026-10-30T23:30": "B08CXVQ3KZ",
-  "2026-10-31T09:45": "B0DCB9C26S",
-  "2026-10-31T10:00": "B07R9ZHX96",
-  "2026-10-31T10:15": "B0HMKN92WL"
- }
 }
