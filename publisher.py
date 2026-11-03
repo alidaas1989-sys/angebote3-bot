@@ -11,12 +11,14 @@ import json
 import os
 import re
 import sys
+import time
 from datetime import datetime, timedelta
 from decimal import Decimal, InvalidOperation
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
 import requests
+from urllib3.exceptions import NewConnectionError
 
 from card import card_from_url
 
@@ -135,15 +137,35 @@ def next_deal(deals: list[dict], state: dict) -> tuple[str, dict, str] | None:
     return None
 
 
+def never_connected(error: requests.ConnectionError) -> bool:
+    if isinstance(error, requests.ConnectTimeout):
+        return True
+    reason = getattr(error.args[0], "reason", None) if error.args else None
+    return isinstance(reason, NewConnectionError)
+
+
 def send_photo(token: str, chat: str, photo: str | bytes, text: str) -> int:
     """photo is either a URL or the JPEG bytes of the designed card."""
     data = {"chat_id": chat, "caption": text}
     url = f"https://api.telegram.org/bot{token}/sendPhoto"
-    if isinstance(photo, bytes):
-        response = requests.post(url, data=data, files={"photo": ("deal.jpg", photo, "image/jpeg")}, timeout=30)
-    else:
-        response = requests.post(url, data={**data, "photo": photo}, timeout=30)
-    payload = response.json()
+    for attempt in range(3):
+        try:
+            if isinstance(photo, bytes):
+                response = requests.post(url, data=data, files={"photo": ("deal.jpg", photo, "image/jpeg")},
+                                         timeout=(10, 60))
+            else:
+                response = requests.post(url, data={**data, "photo": photo}, timeout=(10, 60))
+            break
+        except requests.ConnectionError as error:
+            # Retry only when the connection was never opened, so a retry cannot post twice.
+            if attempt == 2 or not never_connected(error):
+                raise
+            time.sleep(5)
+    try:
+        payload = response.json()
+    except ValueError:
+        # Telegram's gateway answered with an error page: nothing was posted.
+        raise PermissionError(f"HTTP {response.status_code}") from None
     if not payload.get("ok"):
         raise PermissionError(payload.get("description", f"HTTP {response.status_code}"))
     return int(payload["result"]["message_id"])
