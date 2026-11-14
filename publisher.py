@@ -25,11 +25,11 @@ from card import card_from_url
 TZ = ZoneInfo("Europe/Berlin")
 CHANNEL_URL = "https://t.me/Angebote3"
 ASIN_RE = re.compile(r"/(?:dp|gp/product|gp/aw/d)/([A-Z0-9]{10})(?:[/?]|$)", re.I)
-DAY_START, EVENING, LAST = 9 * 60, 20 * 60, 23 * 60 + 30
+DAY_START, LAST, STEP = 9 * 60, 23 * 60 + 30, 8
 
 
 def slots_for(day) -> list[datetime]:
-    minutes = list(range(DAY_START, EVENING, 15)) + list(range(EVENING, LAST + 1, 10))
+    minutes = list(range(DAY_START, LAST + 1, STEP))
     return [datetime(day.year, day.month, day.day, m // 60, m % 60, tzinfo=TZ) for m in minutes]
 
 
@@ -40,7 +40,7 @@ def due_slot(now: datetime) -> datetime | None:
     if not past:
         return None
     slot = past[-1]
-    window = timedelta(minutes=15 if slot.hour * 60 + slot.minute < EVENING else 10)
+    window = timedelta(minutes=STEP)
     if local.hour * 60 + local.minute > LAST and slot.hour * 60 + slot.minute == LAST:
         window = timedelta(minutes=1)  # nothing after 23:30
     return slot if local < slot + window else None
