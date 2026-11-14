@@ -83,8 +83,9 @@ def caption(deal: dict) -> str:
     if before and Decimal(now) >= Decimal(before):
         raise ValueError("السعر الحالي ليس أقل من السعر السابق")
     price_line = f"▪ بسعر {now}€ بدل {before}€" if before else f"▪ بسعر {now}€"
+    header = "#black_Friday_Angebote ❤️❤️" if deal.get("bf") else "🔺عروض يومية || Tägliche Angebote"
     text = (
-        "🔺عروض يومية || Tägliche Angebote\n\n"
+        f"{header}\n\n"
         f"▪ {title}\n\n"
         f"{price_line}\n\n"
         f"{link}\n\n"
