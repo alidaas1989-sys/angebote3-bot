@@ -223,6 +223,9 @@ def main() -> int:
     parser.add_argument("--state", default="state/posted.json")
     args = parser.parse_args()
     now = datetime.now(TZ)
+    if args.command in ("tick", "now") and Path("PAUSED").exists():
+        print("النشر موقوف (ملف PAUSED)")
+        return 0
     if args.command == "schedule":
         slots = slots_for(now.date())
         print(f"{len(slots)} موعداً: " + ", ".join(s.strftime("%H:%M") for s in slots))
