@@ -228,6 +228,14 @@ def main() -> int:
     if args.command in ("tick", "now") and Path("PAUSED").exists():
         print("النشر موقوف (ملف PAUSED)")
         return 0
+    until = Path("PAUSE_UNTIL")
+    if args.command in ("tick", "now") and until.exists():
+        try:
+            if now < datetime.fromisoformat(until.read_text().strip()).replace(tzinfo=TZ):
+                print("النشر موقوف حتى الموعد المحدد (PAUSE_UNTIL)")
+                return 0
+        except ValueError:
+            pass
     if args.command == "schedule":
         slots = slots_for(now.date())
         print(f"{len(slots)} موعداً: " + ", ".join(s.strftime("%H:%M") for s in slots))
