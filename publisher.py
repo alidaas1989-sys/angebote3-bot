@@ -25,7 +25,7 @@ from card import card_from_url
 TZ = ZoneInfo("Europe/Berlin")
 CHANNEL_URL = "https://t.me/Angebote3"
 ASIN_RE = re.compile(r"/(?:dp|gp/product|gp/aw/d)/([A-Z0-9]{10})(?:[/?]|$)", re.I)
-DAY_START, LAST, STEP = 9 * 60, 23 * 60 + 30, 6
+DAY_START, LAST, STEP = 9 * 60, 23 * 60 + 30, 10
 
 
 def slots_for(day) -> list[datetime]:
