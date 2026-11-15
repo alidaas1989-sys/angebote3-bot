@@ -26,10 +26,11 @@ TZ = ZoneInfo("Europe/Berlin")
 CHANNEL_URL = "https://t.me/Angebote3"
 ASIN_RE = re.compile(r"/(?:dp|gp/product|gp/aw/d)/([A-Z0-9]{10})(?:[/?]|$)", re.I)
 DAY_START, LAST, STEP = 9 * 60, 23 * 60 + 30, 10
+FAST_FROM, FAST_STEP = 17 * 60, 8  # from 17:00 one deal every 8 minutes
 
 
 def slots_for(day) -> list[datetime]:
-    minutes = list(range(DAY_START, LAST + 1, STEP))
+    minutes = list(range(DAY_START, FAST_FROM, STEP)) + list(range(FAST_FROM, LAST + 1, FAST_STEP))
     return [datetime(day.year, day.month, day.day, m // 60, m % 60, tzinfo=TZ) for m in minutes]
 
 
@@ -40,7 +41,7 @@ def due_slot(now: datetime) -> datetime | None:
     if not past:
         return None
     slot = past[-1]
-    window = timedelta(minutes=STEP)
+    window = timedelta(minutes=FAST_STEP if slot.hour * 60 + slot.minute >= FAST_FROM else STEP)
     if local.hour * 60 + local.minute > LAST and slot.hour * 60 + slot.minute == LAST:
         window = timedelta(minutes=1)  # nothing after 23:30
     return slot if local < slot + window else None
