@@ -68,10 +68,8 @@ def deal_key(deal: dict) -> str:
 
 
 def image_for(deal: dict) -> str | None:
-    if deal.get("image_url"):
-        return deal["image_url"]
-    asin = deal.get("asin") or (m.group(1) if (m := ASIN_RE.search(deal["link"])) else None)
-    return f"https://m.media-amazon.com/images/P/{asin.upper()}.01._SCRMZZZZZZ_.jpg" if asin else None
+    # Only a real image_url: the generic Amazon fallback returned blank/missing pictures.
+    return deal.get("image_url") or None
 
 
 def caption(deal: dict) -> str:
