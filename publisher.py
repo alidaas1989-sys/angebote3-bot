@@ -26,7 +26,7 @@ TZ = ZoneInfo("Europe/Berlin")
 CHANNEL_URL = "https://t.me/Angebote3"
 ASIN_RE = re.compile(r"/(?:dp|gp/product|gp/aw/d)/([A-Z0-9]{10})(?:[/?]|$)", re.I)
 DAY_START, LAST, STEP = 9 * 60, 23 * 60 + 30, 10
-FAST_FROM, FAST_STEP = 17 * 60, 8  # from 17:00 one deal every 8 minutes
+FAST_FROM, FAST_STEP = 17 * 60, 10  # from 17:00 one deal every 8 minutes
 
 
 def slots_for(day) -> list[datetime]:
