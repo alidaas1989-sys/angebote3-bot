@@ -184,7 +184,8 @@ def post_one(deals_path: Path, state_path: Path, slot_label: str, token: str, ch
     blur = bool(deal.get("blur"))
     try:
         photo = card_from_url(photo, fmt_price(deal["price_now"]),
-                              fmt_price(deal["price_before"]) if deal.get("price_before") else None, blur)
+                              fmt_price(deal["price_before"]) if deal.get("price_before") else None, blur,
+                              theme=len(state["posted"]))
     except Exception as error:
         if blur:  # never fall back to the unblurred product photo
             state["posted"][key] = {"slot": slot_label, "status": "skipped_blur"}
