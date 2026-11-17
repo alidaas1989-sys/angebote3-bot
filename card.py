@@ -34,8 +34,15 @@ def build_card(product: Image.Image, price_now: str, price_before: str | None, b
     card.paste(product, ((PANEL_X - product.width) // 2, (H - product.height) // 2), product)
     draw = ImageDraw.Draw(card)
     draw.rectangle([PANEL_X, 0, W, H], fill=RED)
+    before = Decimal(price_before) if price_before else None
+    if before is None or (1 - now / before) < Decimal("0.25"):
+        # discount under 25% (or none): the image carries no prices, only the channel branding
+        centered(draw, 285, "Tägliche Angebote", font(40), WHITE)
+        centered(draw, 380, "t.me/Angebote3", font(34, bold=False), PINK)
+        out = io.BytesIO()
+        card.save(out, "JPEG", quality=92)
+        return out.getvalue()
     if price_before:
-        before = Decimal(price_before)
         centered(draw, 105, f"-{round((1 - now / before) * 100)}%", font(118), WHITE)
         centered(draw, 285, f"{now:.2f} €", font(76), WHITE)
         box = centered(draw, 405, f"{before:.2f} €", font(46, bold=False), PINK)
