@@ -29,8 +29,14 @@ DAY_START, LAST, STEP = 9 * 60, 23 * 60 + 30, 8
 FAST_FROM, FAST_STEP = 20 * 60, 5  # from 20:00 one deal every 5 minutes
 
 
+DAY_STEP = {"2026-11-19": 7}  # per-day override: one deal every N minutes all day
+
+
 def slots_for(day) -> list[datetime]:
-    minutes = list(range(DAY_START, FAST_FROM, STEP)) + list(range(FAST_FROM, LAST + 1, FAST_STEP))
+    if day.isoformat() in DAY_STEP:
+        minutes = list(range(DAY_START, LAST + 1, DAY_STEP[day.isoformat()]))
+    else:
+        minutes = list(range(DAY_START, FAST_FROM, STEP)) + list(range(FAST_FROM, LAST + 1, FAST_STEP))
     return [datetime(day.year, day.month, day.day, m // 60, m % 60, tzinfo=TZ) for m in minutes]
 
 
@@ -42,6 +48,8 @@ def due_slot(now: datetime) -> datetime | None:
         return None
     slot = past[-1]
     window = timedelta(minutes=FAST_STEP if slot.hour * 60 + slot.minute >= FAST_FROM else STEP)
+    if local.date().isoformat() in DAY_STEP:
+        window = timedelta(minutes=DAY_STEP[local.date().isoformat()])
     if local.hour * 60 + local.minute > LAST and slot.hour * 60 + slot.minute == LAST:
         window = timedelta(minutes=1)  # nothing after 23:30
     return slot if local < slot + window else None
