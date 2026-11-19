@@ -100,11 +100,6 @@
    "slot": "2026-10-31T20:40",
    "status": "sent"
   },
-  "B006ZXNCFQ-R2": {
-   "message_id": null,
-   "slot": "rc-laptop",
-   "status": "posted-by-rc"
-  },
   "B0073UBRP2": {
    "message_id": 167243,
    "slot": "2026-11-02T21:40",
@@ -460,11 +455,6 @@
    "slot": "2026-10-27T15:45",
    "status": "sent"
   },
-  "B075FN4GH5": {
-   "message_id": null,
-   "slot": "rc-laptop",
-   "status": "posted-by-rc"
-  },
   "B075MGFZV4": {
    "message_id": 166853,
    "slot": "2026-10-27T18:00",
@@ -714,11 +704,6 @@
    "message_id": 168599,
    "slot": "2026-11-17T18:36",
    "status": "sent"
-  },
-  "B07L6SWWRV": {
-   "message_id": null,
-   "slot": "rc-laptop",
-   "status": "posted-by-rc"
   },
   "B07L9NMFXD": {
    "message_id": 167155,
@@ -1282,11 +1267,6 @@
    "message_id": 168639,
    "slot": "2026-11-17T22:25",
    "status": "sent"
-  },
-  "B08D6CR4N9-R2": {
-   "message_id": null,
-   "slot": "rc-laptop",
-   "status": "posted-by-rc"
   },
   "B08DJ18C85": {
    "message_id": 168714,
@@ -2542,16 +2522,6 @@
    "slot": "2026-10-31T16:45",
    "status": "sent"
   },
-  "B0C27WKM5W": {
-   "message_id": null,
-   "slot": "rc-laptop",
-   "status": "posted-by-rc"
-  },
-  "B0C27XD321": {
-   "message_id": null,
-   "slot": "rc-laptop",
-   "status": "posted-by-rc"
-  },
   "B0C28CD3BR": {
    "message_id": 166933,
    "slot": "2026-10-28T22:00",
@@ -2979,11 +2949,6 @@
    "message_id": 167297,
    "slot": "2026-11-03T19:30",
    "status": "sent"
-  },
-  "B0D94KKF6D": {
-   "message_id": null,
-   "slot": "rc-laptop",
-   "status": "posted-by-rc"
   },
   "B0D97N6XWK": {
    "message_id": 167304,
@@ -3515,11 +3480,6 @@
    "slot": "2026-10-28T16:15",
    "status": "sent"
   },
-  "B0F457MQCQ": {
-   "message_id": null,
-   "slot": "rc-laptop",
-   "status": "posted-by-rc"
-  },
   "B0F45BLD1H": {
    "message_id": 168549,
    "slot": "2026-11-17T11:56",
@@ -3645,11 +3605,6 @@
    "slot": "2026-11-15T13:10",
    "status": "sent"
   },
-  "B0FC2LC44J": {
-   "message_id": null,
-   "slot": "rc-laptop",
-   "status": "posted-by-rc"
-  },
   "B0FC2RYMHC": {
    "message_id": 167036,
    "slot": "2026-10-30T15:15",
@@ -3764,11 +3719,6 @@
    "message_id": 168490,
    "slot": "2026-11-16T19:56",
    "status": "sent"
-  },
-  "B0FHQT4B6M-R2": {
-   "message_id": null,
-   "slot": "rc-laptop",
-   "status": "posted-by-rc"
   },
   "B0FHWGG5WV": {
    "message_id": 166892,
@@ -3914,11 +3864,6 @@
    "message_id": 168606,
    "slot": "2026-11-17T19:32",
    "status": "sent"
-  },
-  "B0FSLFT35Z": {
-   "message_id": null,
-   "slot": "rc-laptop",
-   "status": "posted-by-rc"
   },
   "B0FSLTHVTC": {
    "message_id": 168683,
@@ -4119,11 +4064,6 @@
    "message_id": 167088,
    "slot": "2026-10-31T12:30",
    "status": "sent"
-  },
-  "B0G6T94RXT-R2": {
-   "message_id": null,
-   "slot": "rc-laptop",
-   "status": "posted-by-rc"
   },
   "B0G8HB1QRK": {
    "message_id": 168403,
@@ -4533,11 +4473,6 @@
    "message_id": 167176,
    "slot": "2026-11-01T20:50",
    "status": "sent"
-  },
-  "B0H3M291T4": {
-   "message_id": null,
-   "slot": "rc-laptop",
-   "status": "posted-by-rc"
   },
   "B0H3P6YDRB": {
    "message_id": 167034,
