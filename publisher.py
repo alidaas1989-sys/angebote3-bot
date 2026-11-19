@@ -85,17 +85,21 @@ def caption(deal: dict) -> str:
     link = str(deal.get("link", "")).strip()
     if not title or "\n" in title or not link.startswith("https://"):
         raise ValueError("العنوان أو الرابط ناقص")
-    now = fmt_price(deal["price_now"])
+    now = fmt_price(deal["price_now"]) if deal.get("price_now") else None
     before = fmt_price(deal["price_before"]) if deal.get("price_before") else None
-    if before and Decimal(now) >= Decimal(before):
+    if before and now and Decimal(now) >= Decimal(before):
         raise ValueError("السعر الحالي ليس أقل من السعر السابق")
-    price_line = f"▪ بسعر {now}€ بدل {before}€" if before else f"▪ بسعر {now}€"
+    # deals flagged without a price (discount under 25%, sent as title + link only) carry no price line
+    if now is None:
+        price_line = None
+    else:
+        price_line = f"▪ بسعر {now}€ بدل {before}€" if before else f"▪ بسعر {now}€"
     header = "#black_Friday_Angebote ❤️❤️" if deal.get("bf") else "🔺عروض يومية || Tägliche Angebote"
     text = (
         f"{header}\n\n"
         f"▪ {title}\n\n"
-        f"{price_line}\n\n"
-        f"{link}\n\n"
+        + (f"{price_line}\n\n" if price_line else "")
+        + f"{link}\n\n"
         "▪ رابط الانضمام إلى القناة 🔗📲📣\n\n"
         f"{CHANNEL_URL}"
     )
@@ -191,7 +195,7 @@ def post_one(deals_path: Path, state_path: Path, slot_label: str, token: str, ch
     photo: str | bytes = image_for(deal)
     blur = bool(deal.get("blur"))
     try:
-        photo = card_from_url(photo, fmt_price(deal["price_now"]),
+        photo = card_from_url(photo, fmt_price(deal["price_now"] or 1),
                               fmt_price(deal["price_before"]) if deal.get("price_before") else None, blur,
                               theme=len(state["posted"]))
     except Exception as error:
