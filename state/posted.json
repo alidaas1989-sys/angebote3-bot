@@ -4867,6 +4867,91 @@
    "message_id": 168439,
    "slot": "2026-11-16T11:30",
    "status": "sent"
+  },
+  "B09BL5CW71": {
+   "slot": "rc-laptop",
+   "status": "posted-by-rc",
+   "message_id": null
+  },
+  "B0B8282R4J": {
+   "slot": "rc-laptop",
+   "status": "posted-by-rc",
+   "message_id": null
+  },
+  "B0H448LDSH": {
+   "slot": "rc-laptop",
+   "status": "posted-by-rc",
+   "message_id": null
+  },
+  "B0H26SBKX4": {
+   "slot": "rc-laptop",
+   "status": "posted-by-rc",
+   "message_id": null
+  },
+  "B0F457MQCQ": {
+   "slot": "rc-laptop",
+   "status": "posted-by-rc",
+   "message_id": null
+  },
+  "B0C27XD321": {
+   "slot": "rc-laptop",
+   "status": "posted-by-rc",
+   "message_id": null
+  },
+  "B0C27WKM5W": {
+   "slot": "rc-laptop",
+   "status": "posted-by-rc",
+   "message_id": null
+  },
+  "B0H3M291T4": {
+   "slot": "rc-laptop",
+   "status": "posted-by-rc",
+   "message_id": null
+  },
+  "B0FSLFT35Z": {
+   "slot": "rc-laptop",
+   "status": "posted-by-rc",
+   "message_id": null
+  },
+  "B006ZXNCFQ-R2": {
+   "slot": "rc-laptop",
+   "status": "posted-by-rc",
+   "message_id": null
+  },
+  "B0G6T94RXT-R2": {
+   "slot": "rc-laptop",
+   "status": "posted-by-rc",
+   "message_id": null
+  },
+  "B07L6SWWRV": {
+   "slot": "rc-laptop",
+   "status": "posted-by-rc",
+   "message_id": null
+  },
+  "B0D94KKF6D": {
+   "slot": "rc-laptop",
+   "status": "posted-by-rc",
+   "message_id": null
+  },
+  "B0FHQT4B6M-R2": {
+   "slot": "rc-laptop",
+   "status": "posted-by-rc",
+   "message_id": null
+  },
+  "B075FN4GH5": {
+   "slot": "rc-laptop",
+   "status": "posted-by-rc",
+   "message_id": null
+  },
+  "B08D6CR4N9-R2": {
+   "slot": "rc-laptop",
+   "status": "posted-by-rc",
+   "message_id": null
+  },
+  "B0FC2LC44J": {
+   "slot": "rc-laptop",
+   "status": "posted-by-rc",
+   "message_id": null
   }
  },
  "slots": {
