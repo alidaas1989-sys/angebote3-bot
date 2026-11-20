@@ -195,7 +195,7 @@ def post_one(deals_path: Path, state_path: Path, slot_label: str, token: str, ch
     photo: str | bytes = image_for(deal)
     blur = bool(deal.get("blur"))
     try:
-        photo = card_from_url(photo, fmt_price(deal["price_now"] or 1),
+        photo = card_from_url(photo, fmt_price(deal.get("price_now") or 1),
                               fmt_price(deal["price_before"]) if deal.get("price_before") else None, blur,
                               theme=len(state["posted"]))
     except Exception as error:
