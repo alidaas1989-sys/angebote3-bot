@@ -30,10 +30,14 @@ FAST_FROM, FAST_STEP = 20 * 60, 5  # from 20:00 one deal every 5 minutes
 
 
 DAY_STEP = {"2026-11-19": 5, "2026-11-22": 7}  # per-day override: one deal every N minutes all day
+DAY_SPLIT = {"2026-11-22": 19 * 60}  # from this minute on that day, use FAST_STEP (5 min)
 
 
 def slots_for(day) -> list[datetime]:
-    if day.isoformat() in DAY_STEP:
+    if day.isoformat() in DAY_SPLIT:
+        split = DAY_SPLIT[day.isoformat()]
+        minutes = list(range(DAY_START, split, DAY_STEP[day.isoformat()])) + list(range(split, LAST + 1, FAST_STEP))
+    elif day.isoformat() in DAY_STEP:
         minutes = list(range(DAY_START, LAST + 1, DAY_STEP[day.isoformat()]))
     else:
         minutes = list(range(DAY_START, FAST_FROM, STEP)) + list(range(FAST_FROM, LAST + 1, FAST_STEP))
@@ -50,6 +54,8 @@ def due_slot(now: datetime) -> datetime | None:
     window = timedelta(minutes=FAST_STEP if slot.hour * 60 + slot.minute >= FAST_FROM else STEP)
     if local.date().isoformat() in DAY_STEP:
         window = timedelta(minutes=DAY_STEP[local.date().isoformat()])
+        if local.date().isoformat() in DAY_SPLIT and slot.hour * 60 + slot.minute >= DAY_SPLIT[local.date().isoformat()]:
+            window = timedelta(minutes=FAST_STEP)
     if local.hour * 60 + local.minute > LAST and slot.hour * 60 + slot.minute == LAST:
         window = timedelta(minutes=1)  # nothing after 23:30
     return slot if local < slot + window else None
