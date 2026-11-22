@@ -29,7 +29,7 @@ DAY_START, LAST, STEP = 9 * 60, 23 * 60 + 30, 8
 FAST_FROM, FAST_STEP = 20 * 60, 5  # from 20:00 one deal every 5 minutes
 
 
-DAY_STEP = {"2026-11-19": 5}  # per-day override: one deal every N minutes all day
+DAY_STEP = {"2026-11-19": 5, "2026-11-22": 5}  # per-day override: one deal every N minutes all day
 
 
 def slots_for(day) -> list[datetime]:
