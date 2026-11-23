@@ -20,7 +20,7 @@ from zoneinfo import ZoneInfo
 import requests
 from urllib3.exceptions import NewConnectionError
 
-from card import card_from_url
+from card import NoProductImage, card_from_url
 
 TZ = ZoneInfo("Europe/Berlin")
 CHANNEL_URL = "https://t.me/Angebote3"
@@ -204,6 +204,12 @@ def post_one(deals_path: Path, state_path: Path, slot_label: str, token: str, ch
         photo = card_from_url(photo, fmt_price(deal.get("price_now") or 1),
                               fmt_price(deal["price_before"]) if deal.get("price_before") else None, blur,
                               theme=len(state["posted"]))
+    except NoProductImage as error:
+        # never post a deal whose picture is empty; the product photo link is the same blank image
+        state["posted"][key] = {"slot": slot_label, "status": "skipped_no_image"}
+        save_state(state_path, state)
+        print(f"لا توجد صورة حقيقية للعرض {key}، تم تجاوزه: {error}")
+        return "skipped"
     except Exception as error:
         if blur:  # never fall back to the unblurred product photo
             state["posted"][key] = {"slot": slot_label, "status": "skipped_blur"}

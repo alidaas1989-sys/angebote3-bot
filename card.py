@@ -17,6 +17,11 @@ THEMES = [
     ((214, 178, 60), (40, 32, 10), (96, 78, 24)),
 ]
 FONTS = Path(__file__).parent / "fonts"
+MIN_SIDE = 100  # smaller pictures are Amazon placeholders, not product photos
+
+
+class NoProductImage(ValueError):
+    """The image link did not give a real product photo."""
 
 
 def font(size: int, bold: bool = True) -> ImageFont.FreeTypeFont:
@@ -67,4 +72,8 @@ def build_card(product: Image.Image, price_now: str, price_before: str | None, b
 def card_from_url(image_url: str, price_now: str, price_before: str | None, blur: bool = False, theme: int = 0) -> bytes:
     response = requests.get(image_url, timeout=30, headers={"User-Agent": "Mozilla/5.0"})
     response.raise_for_status()
-    return build_card(Image.open(io.BytesIO(response.content)), price_now, price_before, blur, theme)
+    product = Image.open(io.BytesIO(response.content))
+    if min(product.size) < MIN_SIDE:
+        # Amazon answers unknown /images/P/ links with a 1x1 placeholder: the card would show no product
+        raise NoProductImage(f"صورة فارغة {product.size[0]}x{product.size[1]}")
+    return build_card(product, price_now, price_before, blur, theme)
