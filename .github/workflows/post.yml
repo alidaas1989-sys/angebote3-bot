@@ -6,6 +6,10 @@ on:
     # starts the next run itself (see "Start next run"), so the bot runs around the clock.
     # The cron is only a backup that restarts the chain if it ever breaks.
     - cron: "*/20 * * * *"
+  push:
+    # a change to this file starts (or queues) a run, so the chain begins without a manual start
+    branches: [main]
+    paths: [".github/workflows/post.yml"]
   workflow_dispatch:
     inputs:
       mode:
