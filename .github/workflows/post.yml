@@ -2,9 +2,10 @@ name: Post deals
 
 on:
   schedule:
-    # GitHub delays cron runs a lot, so each run stays alive and checks every 30 seconds.
-    # A new run only waits in the queue while the previous one is still working.
-    - cron: "*/20 6-22 * * *"
+    # GitHub delays or drops cron runs a lot. Each tick run stays alive ~5h40m and, before it ends,
+    # starts the next run itself (see "Start next run"), so the bot runs around the clock.
+    # The cron is only a backup that restarts the chain if it ever breaks.
+    - cron: "*/20 * * * *"
   workflow_dispatch:
     inputs:
       mode:
@@ -15,6 +16,7 @@ on:
 
 permissions:
   contents: write
+  actions: write  # lets a run start the next one
 
 concurrency:
   group: post-deals
@@ -48,9 +50,16 @@ jobs:
           end=$((SECONDS + 20400))  # about 5h40m, under the 6h job limit
           while [ $SECONDS -lt $end ]; do
             hm=$(TZ=Europe/Berlin date +%H%M)
-            if [ "$hm" -gt 2331 ] || [ "$hm" -lt 0850 ]; then echo "خارج ساعات النشر"; break; fi
+            # outside posting hours: wait (do not exit), so the 09:00 slot is never missed
+            if [ "$hm" -gt 2331 ] || [ "$hm" -lt 0850 ]; then sleep 60; continue; fi
             git pull -q --rebase || true
             python publisher.py tick | grep -v "ليس موعد نشر الآن" || true
             save_state
             sleep 30
           done
+      - name: Start next run
+        # keep the chain going; skipped for manual now/test runs and when a run is cancelled by hand
+        if: ${{ !cancelled() && (inputs.mode || 'tick') == 'tick' }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run post.yml --repo "$GITHUB_REPOSITORY" --ref main -f mode=tick
