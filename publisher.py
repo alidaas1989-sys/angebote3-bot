@@ -26,11 +26,11 @@ TZ = ZoneInfo("Europe/Berlin")
 CHANNEL_URL = "https://t.me/Angebote3"
 ASIN_RE = re.compile(r"/(?:dp|gp/product|gp/aw/d)/([A-Z0-9]{10})(?:[/?]|$)", re.I)
 DAY_START, LAST, STEP = 9 * 60, 23 * 60 + 30, 8
-FAST_FROM, FAST_STEP = 20 * 60, 5  # from 20:00 one deal every 5 minutes
+FAST_FROM, FAST_STEP = 20 * 60, 7  # from 20:00 one deal every 7 minutes (owner, 25 Nov)
 
 
 DAY_STEP = {"2026-11-19": 5, "2026-11-22": 7, "2026-11-25": 10}  # per-day override: one deal every N minutes all day
-DAY_SPLIT = {"2026-11-22": 19 * 60}  # from this minute on that day, use FAST_STEP (5 min)
+DAY_SPLIT = {"2026-11-22": 19 * 60, "2026-11-25": 20 * 60}  # from this minute on that day, use FAST_STEP
 
 
 def slots_for(day) -> list[datetime]:
