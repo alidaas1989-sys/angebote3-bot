@@ -25,8 +25,8 @@ from card import NoProductImage, card_from_url
 TZ = ZoneInfo("Europe/Berlin")
 CHANNEL_URL = "https://t.me/Angebote3"
 ASIN_RE = re.compile(r"/(?:dp|gp/product|gp/aw/d)/([A-Z0-9]{10})(?:[/?]|$)", re.I)
-DAY_START, LAST, STEP = 9 * 60, 23 * 60 + 30, 7  # one deal every 7 minutes all day (owner, 27 Nov)
-FAST_FROM, FAST_STEP = 19 * 60, 7  # from 19:00 one deal every 7 minutes (owner, 26 Nov)
+DAY_START, LAST, STEP = 9 * 60, 23 * 60 + 30, 10  # one deal every 10 minutes all day (owner, from 28 Nov)
+FAST_FROM, FAST_STEP = 19 * 60, 10  # from 19:00 one deal every 7 minutes (owner, 26 Nov)
 
 
 DAY_STEP = {"2026-11-19": 5, "2026-11-22": 7, "2026-11-25": 10, "2026-11-27": 4}  # per-day override: one deal every N minutes all day
