@@ -190,6 +190,38 @@ def send_photo(token: str, chat: str, photo: str | bytes, text: str) -> int:
     return int(payload["result"]["message_id"])
 
 
+def process_deletes(state_path: Path, token: str, chat: str) -> None:
+    """Delete channel posts listed in state["delete"] and put their deals back in the queue.
+
+    Each entry is {"message_id": int, "key": deal key}. A deleted deal loses its "posted" entry,
+    so it is posted again later in the normal schedule.
+    """
+    state = load_state(state_path)
+    todo = state.get("delete") or []
+    if not todo or not token:
+        return
+    left = []
+    for item in todo:
+        try:
+            response = requests.post(f"https://api.telegram.org/bot{token}/deleteMessage",
+                                     data={"chat_id": chat, "message_id": item["message_id"]}, timeout=(10, 30))
+            payload = response.json()
+        except (requests.RequestException, ValueError) as error:
+            print(f"تعذر حذف المنشور {item.get('message_id')}: {error}")
+            left.append(item)
+            continue
+        if payload.get("ok") or "not found" in str(payload.get("description", "")).lower():
+            state["posted"].pop(item["key"], None)
+            print(f"تم حذف المنشور {item['message_id']} وإعادة العرض {item['key']} إلى القائمة")
+        else:
+            print(f"رفض تيليغرام حذف المنشور {item['message_id']}: {payload.get('description')}")
+    if left:
+        state["delete"] = left
+    else:
+        state.pop("delete", None)
+    save_state(state_path, state)
+
+
 def post_one(deals_path: Path, state_path: Path, slot_label: str, token: str, chat: str) -> str:
     state = load_state(state_path)
     if slot_label in state["slots"]:
@@ -269,6 +301,8 @@ def main() -> int:
         print(picked[2] if picked else "لا يوجد عرض جديد في القائمة")
         return 0
     if args.command == "tick":
+        process_deletes(Path(args.state), os.environ.get("TELEGRAM_BOT_TOKEN", "").strip(),
+                        os.environ.get("TELEGRAM_CHAT_ID", "").strip() or "@Angebote3")
         slot = due_slot(now)
         if not slot:
             print("ليس موعد نشر الآن")
