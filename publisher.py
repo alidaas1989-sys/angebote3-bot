@@ -29,6 +29,7 @@ DAY_START, LAST, STEP = 9 * 60, 23 * 60 + 30, 10  # one deal every 10 minutes al
 FAST_FROM, FAST_STEP = 19 * 60, 10  # evening uses the same 10 minutes (owner, from 28 Nov)
 
 
+LATE_LIMIT = 3  # minutes after a slot during which it may still be posted
 DAY_STEP = {"2026-11-19": 5, "2026-11-22": 7, "2026-11-25": 10, "2026-11-27": 4, "2026-11-28": 8}  # per-day override: one deal every N minutes all day
 DAY_SPLIT = {"2026-11-22": 19 * 60, "2026-11-25": 20 * 60}  # from this minute on that day, use FAST_STEP
 
@@ -270,6 +271,11 @@ def main() -> int:
     if args.command == "tick":
         slot = due_slot(now)
         if not slot:
+            print("ليس موعد نشر الآن")
+            return 0
+        if now.astimezone(TZ) - slot > timedelta(minutes=LATE_LIMIT):
+            # a slot that is already minutes old (queue just refilled, or the schedule changed mid-day)
+            # is skipped, so deals never go out back to back
             print("ليس موعد نشر الآن")
             return 0
         label = slot.strftime("%Y-%m-%dT%H:%M")
