@@ -29,7 +29,7 @@ DAY_START, LAST, STEP = 9 * 60, 23 * 60 + 30, 10  # one deal every 10 minutes al
 FAST_FROM, FAST_STEP = 19 * 60, 10  # evening uses the same 10 minutes (owner, from 28 Nov)
 
 
-DAY_STEP = {"2026-11-19": 5, "2026-11-22": 7, "2026-11-25": 10, "2026-11-27": 4}  # per-day override: one deal every N minutes all day
+DAY_STEP = {"2026-11-19": 5, "2026-11-22": 7, "2026-11-25": 10, "2026-11-27": 4, "2026-11-28": 8}  # per-day override: one deal every N minutes all day
 DAY_SPLIT = {"2026-11-22": 19 * 60, "2026-11-25": 20 * 60}  # from this minute on that day, use FAST_STEP
 
 
