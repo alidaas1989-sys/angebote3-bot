@@ -31,13 +31,14 @@ FAST_FROM, FAST_STEP = 19 * 60, 10  # evening uses the same 10 minutes (owner, f
 
 LATE_LIMIT = 3  # minutes after a slot during which it may still be posted
 DAY_STEP = {"2026-11-19": 5, "2026-11-22": 7, "2026-11-25": 10, "2026-11-27": 4, "2026-11-28": 8}  # per-day override: one deal every N minutes all day
-DAY_SPLIT = {"2026-11-22": 19 * 60, "2026-11-25": 20 * 60}  # from this minute on that day, use FAST_STEP
+DAY_SPLIT = {"2026-11-22": 19 * 60, "2026-11-25": 20 * 60, "2026-11-28": 19 * 60}  # from this minute on that day, use the split step
+SPLIT_STEP = {"2026-11-22": 5, "2026-11-25": 7, "2026-11-28": 5}  # step after the split (default FAST_STEP)
 
 
 def slots_for(day) -> list[datetime]:
     if day.isoformat() in DAY_SPLIT:
         split = DAY_SPLIT[day.isoformat()]
-        minutes = list(range(DAY_START, split, DAY_STEP[day.isoformat()])) + list(range(split, LAST + 1, FAST_STEP))
+        minutes = list(range(DAY_START, split, DAY_STEP[day.isoformat()])) + list(range(split, LAST + 1, SPLIT_STEP.get(day.isoformat(), FAST_STEP)))
     elif day.isoformat() in DAY_STEP:
         minutes = list(range(DAY_START, LAST + 1, DAY_STEP[day.isoformat()]))
     else:
@@ -56,7 +57,7 @@ def due_slot(now: datetime) -> datetime | None:
     if local.date().isoformat() in DAY_STEP:
         window = timedelta(minutes=DAY_STEP[local.date().isoformat()])
         if local.date().isoformat() in DAY_SPLIT and slot.hour * 60 + slot.minute >= DAY_SPLIT[local.date().isoformat()]:
-            window = timedelta(minutes=FAST_STEP)
+            window = timedelta(minutes=SPLIT_STEP.get(local.date().isoformat(), FAST_STEP))
     if local.hour * 60 + local.minute > LAST and slot.hour * 60 + slot.minute == LAST:
         window = timedelta(minutes=1)  # nothing after 23:30
     return slot if local < slot + window else None
